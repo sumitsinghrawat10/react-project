@@ -1,0 +1,35 @@
+@import "../mixins-media/breakpoints.scss";
+
+.dialog-button-container {
+  height: 100%;
+  width: 100%;
+  .dialogContent {
+    margin: 30px !important;
+    justify-content: center;
+    overflow-wrap: break-word;
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  .ButtonWrapper {
+    margin: 0 auto;
+    @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+      max-width: 550px;
+    }
+    @media (min-width: 1500px) {
+      max-width: 977px;
+    }
+    .dialogActions {
+      margin-bottom: 30px;
+    }
+    .dialogActions button {
+      margin-right: 0.5rem;
+      width: 9.5rem;
+    }
+  }
+  @include media(">phone", "<=laptop") {
+    .MuiButtonBase-root.MuiButton-root:hover {
+      background-color: $primaryDark;
+    }
+  }
+}

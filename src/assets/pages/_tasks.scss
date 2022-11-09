@@ -1,0 +1,332 @@
+.task-page-wrapper {
+  .AddCircleOutlineIconWrapper {
+    color: $primaryDark;
+    cursor: pointer;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+
+    &:hover {
+      color: $primaryBlue;
+    }
+  } 
+  .TableRowsWrapper {
+    color: $primaryDark !important;
+    font-size: 1rem !important;
+    border-bottom: 1px solid rgb(224, 225, 224) !important;
+  }
+  .TaskDetailWrapper {
+    color: $primaryDark;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+  }
+  .SelectWrapper {
+    width: -webkit-fill-available !important;
+  }
+  .select-container-width{
+    width: 30%;
+  }
+  //style for search icon
+  .search-icon {
+    font-size: medium;
+    color: $Gray44;
+    width:16px;
+    height: 16px;
+    margin-left :0.625rem;
+  }
+  .select-placeholder-text-color{
+    color: $Gray44;
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    letter-spacing: 0;
+    opacity: 1;
+    white-space: nowrap;
+  }
+  .FindByWrapper {
+    color: $secondaryGray;
+    text-align: left;
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    letter-spacing: 0;
+    opacity: 1;
+    white-space: nowrap;
+    padding-top: 1.125rem;
+    padding-left: 0.625rem;
+  }
+  .ClientNameWrap {
+    word-break: break-all;
+  }
+
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .SearchContainer {
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0 0 0.625rem $shadow-black;
+    opacity: 1;
+    margin-top: 1.25rem;
+    padding-top: 1.875rem;
+    display: flex;
+  }
+  .NoTasksText {
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+  .task-empty-text{
+    text-align: center;
+    margin-bottom: auto;
+  }
+  .SortingIcon {
+    display: inline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .TextPinWrapper {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primaryBlue;
+  }
+
+  .TextPin {
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1.25rem;
+    text-align: left;
+    letter-spacing: 0;
+    color: $white;
+    opacity: 1;
+    margin: auto;
+  }
+
+  /* Task Form Page Css */
+  .form-field-wrapper
+  {
+    margin-bottom: 0.9375rem;
+  }
+  &.form-container .input-form, .form-container .select-wrap, .form-container .input-text-overide-width
+  {
+        margin-bottom: 0;
+  }
+  .CloseDialog {
+    .close-assign-task {
+      float: right;
+      margin-top: 0.625rem;
+      margin-right: 0.938rem;
+
+    }
+  }
+  .DialogTop {
+    text-align: center;
+    font-weight: $font-weight-bold !important;
+    font-family: $default-font-name !important;
+    font-size: $popup-title-size;
+    color: $primaryDark !important;
+  }
+  .Error {
+    font-size: 0.875rem;
+    color: $error-text;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+    margin-left: 2px;
+  }
+
+  /* Task Details Page css */
+
+  .TaskDescriptionWrapperDiv {
+    width: 100%;
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    padding-bottom: 0.188rem;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+    border-bottom: 1px solid $primaryBlue;
+  }
+
+  .TaskDetails {
+    width: 30%;
+  }
+  .EditLinkImg {
+    margin-left: 0.313rem;
+  }
+  .TaskStatus {
+    margin-left: 0.5rem;
+  }
+  .UnderReviewWrapper {
+    text-align: left;
+    font-weight: $font-weight-bold;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+  }
+
+  .SubTitle {
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    font-family: $default-font-name;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    color: $primaryDark;
+    opacity: 1;
+    margin-top: 1.875rem;
+    margin-left: 17px;
+  }
+  .NoteCreatedBy {
+    font-family: $default-font-name !important;
+    font-weight: $font-weight-bold !important;
+    text-align: left;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+    font-size: 0.875rem !important;
+  }
+  .AssignedToDiv {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.688rem;
+  }
+  .RowWrapper {
+    //   top: 274px;
+    //   left: 40px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+    margin-top: 3.125rem;
+    margin-left: 1rem;
+  }
+
+  .RowWrapperNew {
+    margin-top: 1.875rem;
+    margin-left: 1rem;
+    margin-bottom: 2.563rem;
+  }
+
+  .TaskDetailsWrapper {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0 0 10px $shadow-black;
+    width: 100%;
+    margin-left: 0 !important;
+    height: 9.375rem;
+  }
+
+  .SaveTaskDetailButton {
+    width: 7.5rem;
+    height: 3.125rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  .SaveNoteButton {
+    width: 7.5rem;
+    height: 3.125rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  .ButtonCancel {
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    color: $true-black !important;
+    &:hover {
+      color: $primaryBlue !important;
+      cursor: pointer;
+    }
+  }
+
+  .HrLine {
+    border: 1px solid $primaryBlue;
+    width: 100%;
+  }
+
+  .TaskDescriptionWrapper {
+    top: 27.75rem;
+    left: 23rem;
+    width: 100%;
+    height: 1.188rem;
+    text-align: left;
+    font-family: $default-font-name;
+    font-weight: $font-weight-normal;
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+  }
+  .TitleTextFieldWrapper {
+    height: 60px;
+    width: 35rem;
+  }
+
+  .EditTitleSaveBtn {
+    font-size: 1rem;
+    color: $primaryDark;
+    &:hover {
+      cursor: pointer;
+      color: $primaryBlue;
+    }
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .LinkBold {
+    font-family: $default-font-name;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: $primaryDark;
+    opacity: 1;
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+      color: $primaryBlue;
+    }
+  }
+  .ArchiveLink {
+    margin-left: 52%;
+  }
+
+  .EditLink {
+    margin-top: 1%;
+    float: right;
+    height: 1.188rem;
+  }
+    .flex-container {
+      display: flex;
+    }
+  .text-feild-scroll-bar textarea{
+    &::-webkit-scrollbar {
+      width: $scroll-width;
+      height: $scroll-height;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondaryGray;
+      border-radius: $scroll-thumb-radius;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $secondaryGrayLight;
+    }
+  }
+    //Media query for Task page
+    @import "../mixins-media/mq-task";
+}

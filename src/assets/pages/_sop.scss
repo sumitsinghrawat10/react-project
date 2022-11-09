@@ -1,0 +1,925 @@
+.sop-dashboard-container {
+
+    // Publish Dialog css
+    .PublishDialogContentWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .dialogContent {
+            width: 31.25rem;
+        }
+    }
+
+    .publish-dialog-content {
+        width: 46rem;
+        height: 25.753rem;
+        padding-top: 5px;
+    }
+
+    .ButtonWrapper {
+        margin: 0 auto;
+
+        @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+            max-width: 46.875rem;
+        }
+
+        @media (min-width: 1500px) {
+            max-width: 61.063rem;
+        }
+
+        .dialogActions {
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    .close-dialog-btn {
+        float: right;
+        margin-top: 0.625rem;
+        margin-right: 0.938rem;
+    }
+
+    //index page
+    .SearchContainerForSOP {
+        background: $white 0% 0% no-repeat padding-box;
+        box-shadow: 0 0 0.625rem $shadow-black;
+        opacity: 1;
+        margin-top: 1.25rem;
+        padding-top: 1.875rem;
+        display: flex;
+    }
+
+    .AddCircleOutlineIconWrapper {
+        color: $primaryDark;
+        cursor: pointer;
+        width: 2.25rem !important;
+        height: 2.25rem !important;
+
+        :hover {
+            color: $primaryBlue;
+        }
+    }
+
+    .category-error {
+        font-size: 0.875rem;
+        color: $error-text;
+        margin-top: -0.9rem;
+    }
+
+    .button-link {
+        color: $primaryDark;
+        font-size: 0.875rem;
+        align-items: left;
+        height: 20px;
+
+        &:hover {
+            background-color: $white;
+            color: $primaryBlue;
+        }
+    }
+
+    .NoSOPText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.25rem;
+    }
+
+    .FilterRowWrapper {
+        margin-top: 3.75rem;
+        align-items: center;
+    }
+
+    .SopCard {
+        background: $white 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 0.625rem $shade-black;
+        border-radius: 0.313rem;
+        opacity: 1;
+        margin-top: 2.188rem;
+        height: 17.25rem;
+        margin-right: 1.875rem;
+        width: 16.2rem;
+        margin-bottom: 0.938rem;
+    }
+
+    .status-new {
+        color: $primaryBlue;
+    }
+
+    .sop-card-status {
+        height: 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3125rem;
+        border-radius: 0.313rem 0.313rem 0 0;
+
+        &:hover {
+            background-color: $primaryBlue;
+            color: $white;
+
+            .ms-auto {
+                color: $white;
+            }
+        }
+    }
+
+    .SopCardWrapper {
+        margin-bottom: 2.375rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-height: 48.125rem;
+        overflow-y: auto;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .FilterByTextWrapper {
+        font-family: $default-font-name;
+        font-weight: $font-weight-bold;
+        font-size: 1.25rem;
+        text-align: left;
+        letter-spacing: 0.031rem;
+        color: $primaryDark;
+        opacity: 1;
+    }
+
+    .SopCardWrapper::-webkit-scrollbar {
+        width: 0.625rem !important;
+        height: 3.875rem !important;
+    }
+
+    .SopCardWrapper::-webkit-scrollbar-thumb {
+        background-color: $gray-scroll;
+        border-radius: 0.313rem;
+    }
+
+    .SopCardWrapper::-webkit-scrollbar-track {
+        background-color: $secondaryGrayLight;
+    }
+
+    .StatusDiv {
+        margin-left: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .PublishStatusDiv {
+        text-align: left;
+        color: $white;
+        display: none;
+        margin-left: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .SopStatus {
+        text-align: left;
+        font-family: $default-font-name;
+        font-weight: $font-weight-normal;
+        font-size: 0.875rem;
+        letter-spacing: 0.022rem;
+        color: $Gray44;
+        opacity: 1;
+        margin-right: 0.5rem;
+        margin-top: 0.75rem;
+
+        .hover-heading {
+            color: $white  !important;
+        }
+    }
+
+    .textInlineWrap {
+        display: inline !important;
+    }
+
+    .SopCardBody {
+        font-family: $default-font-name;
+        font-weight: $font-weight-bold;
+        font-size: 1.563rem;
+        letter-spacing: 0px;
+        color: $primaryDark;
+        height: 9.375rem;
+        margin: 1rem;
+        overflow-wrap: break-word;
+    }
+
+    .HorizonatalLine {
+        color: $primaryBlue;
+        border: 0.094rem solid;
+        border-radius: 1px;
+        margin: 0 !important;
+    }
+
+    .CardLocation {
+        font-family: $default-font-name;
+        font-weight: $font-weight-normal;
+        font-size: 0.875rem;
+        letter-spacing: 0.022rem;
+        color: $Gray44;
+    }
+
+    .CardSeeDetails {
+        font-family: $default-font-name;
+        font-weight: $font-weight-bold;
+        font-size: 1rem;
+        letter-spacing: 0px;
+        cursor: pointer;
+        color: $primaryDark;
+
+        &:hover {
+            color: $primaryBlue;
+        }
+    }
+
+    .BottomData {
+        display: inline-block;
+        align-self: flex-end;
+        width: 100%;
+    }
+
+    .LoaderWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+
+    //create new sop css
+    .select-box-wrapper .input-form.select-field {
+        display: block;
+    }
+
+    .select-field-height {
+        height: 50px;
+    }
+
+    .SubHeading {
+        font-family: $default-font-name;
+        font-weight: $font-weight-bold;
+        font-size: 1.563rem;
+        letter-spacing: 0px;
+        color: $primaryDark;
+        margin-top: 2.75rem;
+        margin-bottom: 0;
+    }
+
+    .BottomButtonWrapper {
+        margin-top: 9.375rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .ErrorWrapper {
+        color: $secondaryRed;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    //revise alert dialog
+    .revise-alert-dialog {
+        width: 35rem;
+    }
+
+    //sop details page
+    .edit-btn-sop-details {
+        border-color: $primaryDark;
+        color: $primaryDark;
+        height: 3.125rem;
+        width: 6.25rem;
+        margin-right: 1.25rem;
+
+        &:hover {
+            color: $primaryBlue;
+            background: transparent;
+        }
+    }
+
+    .downloadIcon:hover {
+        color: $primaryBlue  !important;
+        cursor: pointer;
+    }
+
+    .description-changes-dialog {
+        width: 35rem;
+    }
+
+    .SopDetailsWrapper {
+        .bottom-line {
+            content: "";
+            display: block;
+            border-bottom: 3px solid $primaryDark;
+            width: 92px;
+            position: relative;
+            bottom: -9px;
+        }
+
+        .sopdetail-bottom-line {
+            @extend .bottom-line;
+            bottom: -0.125rem;
+        }
+
+        .titleBox1 {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .titleBox1 a {
+            margin-left: 1.25rem;
+            font-size: 1rem;
+        }
+
+        .font-600 {
+            font-weight: $font-weight-bold;
+        }
+
+        .datesBox h6 {
+            font-size: 1.25rem;
+            font-weight: $font-weight-bold;
+            margin-right: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        .TableBox {
+            box-shadow: 0px 0px 0.625rem $shadow-black;
+        }
+
+        .page-title-sop {
+            font-size: 35px;
+            position: relative;
+            font-weight: bold;
+            font-family: "Urbanist", sans-serif;
+            color: $primaryDark;
+        }
+
+        .TitleWrapWithTooltipForSop {
+            width: 100%;
+            word-wrap: break-word;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .TitleWrapForSop {
+            width: 100%;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+
+        .sopWrapText {
+            word-wrap: break-word;
+        }
+
+        .LeftGreyBox {
+            box-shadow: 0px 0px 0.625rem $shadow-black;
+            background: $secondaryGrayLight;
+            padding: 0 1.563rem;
+            height: 26rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .LeftGreyBox h5 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 0;
+            border-bottom: 2px solid $secondaryGray;
+            color: $primaryDark;
+            padding-bottom: 2.125rem;
+        }
+
+        .no-border {
+            padding-bottom: 0 !important;
+            border-bottom: 0 !important;
+        }
+
+        .RightWhiteBox {
+            background: $white;
+            padding: 0 1.563rem;
+            height: 26rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .RightWhiteBox h5 {
+            font-size: 1rem;
+            margin-bottom: 0;
+            border-bottom: 2px solid $secondaryGray;
+            color: $primaryDark;
+            padding-bottom: 2.25rem;
+        }
+
+        .RightWhiteBox h5 .text-blue {
+            color: $primaryBlue;
+            font-weight: $font-weight-bold;
+        }
+
+        .ContentBoxx {
+            padding-bottom: 1.563rem;
+            overflow: auto;
+        }
+
+        .ContentBoxx h4 {
+            font-size: 1.563rem;
+            font-weight: $font-weight-bold;
+            margin-bottom: 1.563rem;
+            color: $primaryDark;
+        }
+
+        .ContentBoxx h1,
+        .ContentBoxx h2,
+        .ContentBoxx h3,
+        .ContentBoxx h4,
+        .ContentBoxx h5,
+        .ContentBoxx h6,
+        .ContentBoxx p {
+            font-family: "Urbanist", sans-serif !important;
+        }
+
+        .ContentBoxx p {
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+            margin-bottom: 0.625rem;
+        }
+
+        .ShadowBox {
+            box-shadow: 0px 0px 0.625rem $shadow-black;
+            padding: 1.875rem 1.875rem;
+        }
+
+        .title55 {
+            font-size: 1.563rem;
+            font-weight: $font-weight-bold;
+            margin-bottom: 1.563rem;
+            color: $primaryDark;
+        }
+
+        .borderBlue {
+            border-bottom: 1px solid $primaryBlue;
+        }
+
+        .border-gray {
+            border-bottom: 1px solid $secondaryGray;
+        }
+
+        .MuiAccordionSummary-root {
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+        }
+
+        .MuiAccordion-root {
+            box-shadow: none;
+        }
+
+        .MuiAccordionDetails-root {
+            padding: 0;
+        }
+
+        .AccordionDetailsBox {
+            max-height: 12.5rem;
+            overflow-y: scroll;
+        }
+
+        .AccordionDetailsBox::-webkit-scrollbar {
+            width: 0.625rem;
+        }
+
+        .AccordionDetailsBox::-webkit-scrollbar-track {
+            background: $white;
+        }
+
+        .AccordionDetailsBox::-webkit-scrollbar-thumb {
+            background: $secondaryGray;
+            border-radius: 1.25rem;
+        }
+
+        .AccordionDetailsBox::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .AccordionDetailsBoxHeading {
+            display: flex;
+        }
+
+        .AccordionDetailsBoxHeading span {
+            font-size: 1.25rem;
+            margin-right: 1.875rem;
+            font-weight: 700;
+        }
+
+        .AccordionDetailsBoxHeading span.datename {
+            font-weight: $font-weight-normal;
+        }
+
+        .text-blue {
+            color: $primaryBlue;
+        }
+
+        .statusName {
+            color: $primaryLight;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            padding-left: 1rem;
+        }
+
+        .revisionAccordionDetail {
+            overflow: visible;
+            visibility: visible;
+        }
+
+
+        .headingTitle {
+            text-decoration: none !important;
+            color: $primaryDark;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: $primaryBlue;
+            }
+        }
+    }
+
+    .ButtonsWrapper {
+        margin: 0 auto;
+        width: 100%;
+
+        @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+            max-width: 34.375rem;
+        }
+
+        @media (min-width: 1500px) {
+            max-width: 61.063rem;
+        }
+
+        .dialogActions {
+            margin-bottom: 1.875rem;
+        }
+
+        .dialogActions button {
+            margin-right: 0.5rem !important;
+        }
+    }
+
+    //sop alert dialog box
+    .ButtonCancle {
+        margin-top: 0.531rem;
+    }
+
+    .ButtonSizeSave {
+        margin-left: 4.4rem;
+        margin-bottom: 01.10rem;
+        width: 11.5rem;
+        height: 3.700rem;
+    }
+
+    .ButtonSizeCancle {
+        margin-right: 22rem;
+        margin-bottom: 01.10rem;
+        height: 2.580rem;
+        width: 6.0rem;
+        font-size: 0.825rem;
+        color: $primaryDark;
+        font-weight: $font-weight-bold;
+        border: 1px solid $primaryDark;
+        opacity: 1;
+
+        &:hover {
+            color: $primaryBlue;
+        }
+    }
+
+    .ButtonSize {
+        width: 9.375rem !important;
+        margin-bottom: 5.25rem !important;
+    }
+
+    .ApprovalSaveButton {
+        background-color: $primaryBlue  !important;
+        color: $white  !important;
+    }
+
+    .ApprovalSaveButton:hover {
+        background-color: $primaryDark  !important;
+    }
+
+    .DialogWrapper {
+        height: 100%;
+        width: 100%;
+
+        .dialogContent {
+            margin: 1.875rem !important;
+            justify-content: center;
+            overflow-wrap: break-word;
+            font-size: 1.5rem !important;
+            text-align: center;
+        }
+    }
+
+    .alert-message {
+        font-size: 1.5rem !important;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 60%;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .ErrorBox {
+        margin-left: 0.625rem;
+        color: red;
+        margin-top: 0.625rem;
+        margin-right: 0.625rem;
+    }
+
+    .PublishError {
+        margin-left: 0.625rem;
+        color: red;
+        margin-top: 0.625rem;
+        margin-right: 0.625rem;
+        display: block;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .close-dialog-btn {
+        float: right;
+        margin-top: 0.625rem;
+        margin-right: 0.938rem;
+    }
+
+    .dialogTop {
+        text-align: center;
+        font-weight: bold !important;
+        color: $primaryDark  !important;
+        font-size: 1.40rem;
+    }
+
+    .descriptionBox {
+        font-size: 1rem;
+        background-color: $GrayLight;
+        height: 14rem;
+    }
+
+    .SaveButton {
+        width: 11.25rem;
+        height: 3.125rem !important;
+        font-size: 0.875rem;
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        background-color: $primaryBlue  !important;
+        color: $white  !important;
+    }
+
+    .SaveButton:hover {
+        background-color: $primaryDark  !important;
+    }
+
+    .EditButton {
+        font-size: 0.825rem;
+        color: $primaryDark  !important;
+        border: 1px solid $primaryDark;
+    }
+
+    .EditButton:hover {
+        color: $primaryBlue  !important;
+        background: transparent;
+        border: 1px solid $primaryBlue;
+    }
+
+    .PopupCancelButton {
+        margin-left: 1.563rem;
+        margin-bottom: 1.563rem;
+        height: 2.5rem;
+        width: 5rem;
+        font-size: 0.825rem;
+        color: $primaryDark  !important;
+        border: 1px solid $primaryDark;
+    }
+
+    .PopupCancelButton:hover {
+        color: $primaryDark  !important;
+        border: 1px solid $primaryDark;
+        background: transparent;
+    }
+
+    .ApprovalSubmitButton {
+        height: 3.5rem;
+        width: 8.375rem;
+        margin-right: 1.563rem;
+        margin-bottom: 1.563rem;
+        background-color: $primaryBlue  !important;
+        color: $white  !important;
+    }
+
+    //SopEmployeeBadging.tsx file
+
+    .PageWrapper {
+        .font-bold {
+            font-weight: 600;
+        }
+
+        .action-alginment {
+            justify-content: flex-end;
+        }
+
+        .SaveDraftButton {
+            width: 7.5rem;
+            height: 3.125rem;
+            font-size: 0.875rem;
+            background-color: $primaryBlue  !important;
+
+            &:hover {
+                background-color: $primaryDark  !important;
+            }
+        }
+
+        .Line {
+            border: 1px solid $primaryBlue;
+            margin-top: 2.5rem;
+        }
+
+        .dates-wrapper h6 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-right: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        .RightWhiteBox h5 .text-blue {
+            color: $primaryBlue;
+            font-weight: 600;
+        }
+
+        .statusName {
+            color: $primaryLight;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: 2.5rem;
+        }
+
+        .CancelButton {
+            color: $true-black;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: $primaryBlue  !important;
+            }
+        }
+
+        .titleBox1 {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .bottom-line {
+            content: "";
+            display: block;
+            border-bottom: 0.188rem solid $primaryDark;
+            width: 5.75rem;
+            position: relative;
+            bottom: -0.125rem;
+        }
+
+        .page-title-sop {
+            font-size: 2.188rem;
+            position: relative;
+            font-weight: bold;
+            font-family: "Urbanist", sans-serif;
+            color: $primaryDark;
+        }
+
+        .TitleWrapWithTooltipForSop {
+            width: 100%;
+            word-wrap: break-word;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .TitleWrapForSop {
+            width: 100%;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+    }
+
+    .sop-cancel-Button {
+        color: $black;
+        font-weight: $font-weight-bold;
+        cursor: pointer;
+        border: 1px solid $primaryDark;
+        opacity: 1;
+        height: 50px;
+        width: 100px;
+
+        &:hover {
+            color: $primaryBlue;
+        }
+    }
+
+    @at-root #menu-CategoryType {
+        & .MuiPopover-paper {
+            max-height: 25%;
+        }
+    }
+
+    .MuiFormControlLabel-root {
+        & .Mui-checked {
+            color: $primaryLight;
+        }
+
+        & .MuiTypography-root {
+            font-size: 1rem;
+            font-weight: $font-weight-normal;
+            letter-spacing: 0;
+            opacity: 1;
+            text-align: left;
+        }
+    }
+
+
+    .sop-iconBack {
+        height: 2.08rem;
+        width: 2.41rem;
+        font-size: 1.55rem;
+        padding-top: 0rem;
+        margin-right: 0.6rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        box-shadow: 0rem 0rem 0.5rem #00000033;
+        border-radius: 6.25rem;
+    }
+
+    .sop-iconBack:hover {
+        color: $primaryLight;
+        cursor: pointer;
+    }
+
+    .mui-label-styling {
+
+        .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.Mui-focused,
+        .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.MuiFormLabel-filled {
+            transform: translate(0.938rem, 0.125rem) scale(0.7);
+        }
+    }
+
+    &.sop-alert-dialog .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper {
+        max-width: 50rem;
+        width: 36rem;
+    }
+
+    .sop-iconBack {
+        height: 2.08rem;
+        width: 2.41rem;
+        font-size: 1.55rem;
+        padding-top: 0rem;
+        margin-right: 0.6rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        box-shadow: 0rem 0rem 0.5rem #00000033;
+        border-radius: 6.25rem;
+    }
+
+    .sop-iconBack:hover {
+        color: $primaryLight;
+        cursor: pointer;
+    }
+
+    &.sop-alert-dialog .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper {
+        max-width: 50rem;
+        width: 36rem;
+    }
+
+    .mui-label-styling {
+
+        .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.Mui-focused,
+        .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.MuiFormLabel-filled {
+            transform: translate(0.938rem, 0.125rem) scale(0.7);
+        }
+    }
+
+    @import "../mixins-media/mq-sop";
+
+}
+
+.data-empty-text {
+    margin: 1rem 1.8rem !important;
+    text-align: center !important;
+}
+
+.sop-dashboard-container.DialogWidth .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper {
+
+    max-width: 50rem;
+
+}
+
+.status-new {
+    color: $primaryBlue;
+}

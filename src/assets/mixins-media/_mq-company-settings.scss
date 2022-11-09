@@ -1,0 +1,11 @@
+@import "./breakpoints.scss";
+
+@include media(">phone", "<=desktop") {
+  .details-edit-textfield {
+    width: 11.5rem;
+  }
+
+  .details-edit-contact-textfield {
+    width: 11.5rem;
+  }
+}

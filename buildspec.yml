@@ -1,0 +1,74 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      #nodejs: 16
+      nodejs: 14-alpine
+    commands:
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - echo "Account Id = $(echo $CODEBUILD_BUILD_ARN | cut -f5 -d ':')"
+      - export ACCOUNT_ID="$(echo $CODEBUILD_BUILD_ARN | cut -f5 -d ':' )"
+      - export CI=true  #this is for nodejs to notify test/build stage will be run for CI/CD integration.
+      - # SonarScanner Download-We might download this from S3, just to speed up the process and decrease the costs.
+      - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+      - unzip ./sonar-scanner-cli-4.6.2.2472-linux.zip
+      - export PATH=$PATH:./sonar-scanner-4.6.2.2472-linux/bin/
+
+  pre_build:
+    commands:
+      - env
+      - export GIT_HASH=$CODEBUILD_BUILD_NUMBER
+      - export IMAGE_TAG=$CODEBUILD_BUILD_NUMBER
+      - echo "Codebuild ID:$CODEBUILD_BUILD_ID"
+      - aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com
+  build:
+    commands:
+      #- npm install
+      #- npm run build
+      # - npm test -- --coverage --watchAll=false #notice the  additional -- before coverage..
+      - #Sonarqube Integration
+      # - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST
+      # - docker build -t regtech-fe .
+      
+     # - docker build -t regtech-fe -f ./Dockerfile.$env .
+      - docker build -t regtech-fe -f ./Dockerfile.dev .
+      - echo Tagging with branch $env and hash $GIT_HASH
+      - docker image tag regtech-fe:latest $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:latest
+      - docker image tag regtech-fe:latest $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:$GIT_HASH
+      - docker image tag regtech-fe:latest $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:$env
+      - docker push $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:latest
+      - docker push $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:$GIT_HASH
+      - docker push $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:$env
+      - echo Writing image definitions file
+      - printf '[{"name":"%s-regtech-fe-container","imageUri":"%s"}]' $env $ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/$env-regtech-fe-repo:latest > imagedefinitions.json
+      - cat imagedefinitions.json
+
+
+  post_build:
+    commands:
+      - echo "Build finished with Exit Code:"
+      - env
+
+artifacts:
+  files:
+    - imagedefinitions.json
+    - build
+  name: regtech-fe.zip
+  git_hash: $GIT_HASH
+cache:
+  Type: LOCAL
+  Modes: # You can specify one or more cache mode,
+    - LOCAL_CUSTOM_CACHE
+    - LOCAL_DOCKER_LAYER_CACHE
+    - LOCAL_SOURCE_CACHE
+  paths:
+    - '/root/.docker-cache/**/*'
+
+# reports: #New
+#   code_coverage: # CodeBuild will create a report group called "codecoverage".
+#     files:
+#       - 'clover.xml'
+#     type: "CODE_COVERAGE"
+#     base-directory: 'coverage' # Location of the reports
+#     file-format: "CLOVERXML"

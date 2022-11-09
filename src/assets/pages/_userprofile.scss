@@ -1,0 +1,299 @@
+.userprofile-container {
+  &.change-password-dialog-width .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper{
+    max-width: 36.438rem;
+    width: 100%;
+  }
+  &.change-password-dialog-width {
+    z-index: 1050;
+    height: 100%;
+  }
+  .container-margin {
+    padding-top: 1.625rem;
+  }
+
+  .input-form-margin {
+    margin-bottom: 0px !important;
+  }
+
+  .input-form {
+
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+
+    div::before {
+      border-bottom: none !important;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    input::-webkit-input-placeholder {
+      color: $secondaryGray;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &.select-field {
+      &::before {
+        border-bottom: none !important;
+        content: "" !important;
+      }
+
+      div {
+        padding: 16px 32px 13px 16px;
+        font-size: 16px;
+      }
+
+      svg {
+        color: $primaryBlue  !important;
+      }
+
+      .input-placeholder {
+        color: $secondaryGray;
+        font-size: 16px;
+        font-weight: normal;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .MenuButton {
+    font-weight: $font-weight-bold;
+  }
+
+  .dropdown-item:hover {
+    color: $primaryBlue;
+    background-color: $white  !important;
+  }
+
+  .HeaderWrapper {
+    display: flex;
+    font-size: 1.563rem;
+  }
+
+  .ContactInfoIcon {
+    margin-right: 1rem;
+  }
+  .BasicInfoIcon-width{    
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-top: 0.375rem;
+  }
+
+  .EditFullNameWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .CancelButtonWrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  .align-row {
+    align-items: center;
+    border-bottom: 2px solid $profile-separator-color;
+  }
+
+  .ProfileImageBoxWrapper {
+    text-align: right;
+  }
+
+  .DialogContentWrap {
+    overflow-y: initial;
+  }
+
+  .SaveButton {
+    margin-top: 1.25rem;
+    cursor: pointer;
+    padding-right: 2.813rem;
+    font-family: $default-font-name;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+    font-size: 1rem;
+
+    &:hover {
+      color: $primaryBlue;
+    }
+  }
+
+  .TextPinWrapper {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primaryBlue;
+  }
+
+  .TextPin {
+    font-family: $default-font-name;
+    font-size: 1.25rem;
+    text-align: left;
+    letter-spacing: 0px;
+    color: $white;
+    opacity: 1;
+    margin: auto;
+  }
+
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .MenuIcon {
+    font-size: 0.938rem;
+  }
+
+  .heading {
+    background-color: $primaryDark;
+    color: $white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.625rem;
+    margin-bottom: -0.313rem;
+  }
+
+  .DialogTop {
+    text-align: center;
+    font-weight: $font-weight-bold  !important;
+    font-size: $popup-title-size;
+    color: $primaryDark  !important;
+  }
+
+  .ResponseErrorMessage {
+    text-align: center;
+    font-weight: $font-weight-bold;
+    color: $error-text;
+    font-size: 0.875rem;
+    padding-left: 0.375rem;
+    width: 98%;
+  }
+
+  .PasswordNote {
+    color: $light-gray;
+    font-size: 0.75rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .PasswordConditionHead {
+    color: $dark-gray;
+    font-size: 0.75rem;
+    margin-bottom: -2px;
+  }
+
+  .CloseDialog {
+    .close-assign-license {
+      float: right;
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+
+    margin-top: 0.15rem;
+    margin-right: 0.11rem;
+  }
+
+  .required {
+    color: $dark-gray;
+    font-size: 0.75rem;
+    font-weight: $font-weight-bold;
+    margin-top: -0.75rem;
+    margin-bottom: 0.313rem;
+  }
+
+  .BadgeCard {
+    padding-bottom:.938rem;
+    .badge-card {
+      padding-top: 0.938rem !important;
+    }
+
+    .badge-label {
+      margin-left: 0.75rem;
+    }
+
+    .label-font {
+      font-size: calc(1.275rem + 0.3vw);
+    }
+  }
+
+  .BasicInformationBox {
+    padding: 1.25rem 1.25rem;
+    box-shadow: 0px 0px 0.625rem $shadow-black;
+  }
+
+  .ProfileImageBox {
+    position: relative;
+
+    .EditProfileBtn {
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 0.625rem;
+      bottom: 0.313rem;
+      background: $white 0% 0% no-repeat padding-box;
+      border-color: $white;
+      border: none;
+      box-shadow: 0px 0px 0.625rem $shadow-dark;
+      width: 1.25rem;
+      height: 1.25rem;
+
+      .ThreeDotIcon {
+        width: 0.625rem;
+        height: 1.313rem;
+      }
+    }
+  }
+
+  .EditOption {
+    text-align: right;
+    font-weight: $font-weight-bold;
+
+    :hover {
+      cursor: pointer;
+      color: $primaryBlue;
+    }
+  }
+
+  .ButtonWidth {
+    width: 100%;
+    height: 3.563rem;
+    margin-top: 1.663em;
+    margin-bottom: 1.5rem;
+  }
+
+  .EyeIcon-resize {
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.30);
+  }
+
+  .DialogTitle-Resize {
+    padding-top: 0px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .Password-spacing {
+    margin-top: 1.25rem;
+  }
+  .content-margin {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;   
+  }
+  .password-content-align {
+    padding-top: 1rem;
+    
+  }  
+  @import "../mixins-media/mq-user-profile";
+}

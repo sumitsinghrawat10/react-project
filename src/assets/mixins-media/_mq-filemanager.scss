@@ -1,0 +1,49 @@
+@import "./breakpoints.scss";
+
+//Media Query for Tablet
+@include media(">=phone", "<=desktop") {
+  .file-card-wrraper {
+    grid-template-columns: repeat(3, auto);
+  }
+  .file-card-footer {
+    justify-content: flex-start;
+    width: 15rem;
+  }
+  .page-title-file-manager {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $default-font-name;
+    color: $primaryDark;
+  }
+  .Action-Text {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: $true-black;
+    cursor: pointer;
+  }
+  .files-gallery-container {
+    grid-row-gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+//Media Query for Laptop
+@include media(">1367px", "<=1580px") {
+  .file-card-wrraper {
+    grid-template-columns: repeat(4, auto);
+  }
+  .file-card-footer {
+    justify-content: flex-start;
+    width: 15rem;
+  }
+  .Action-Text {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: $true-black;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryBlue;
+    }
+  }
+}

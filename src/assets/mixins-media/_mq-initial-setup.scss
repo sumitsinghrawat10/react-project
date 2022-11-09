@@ -1,0 +1,10 @@
+@import "./breakpoints.scss";
+
+@include media(">phone", "<=desktop") {
+  .MuiInputLabel-root {
+    width: 100% !important;
+  }
+  .MuiButtonBase-root.MuiButton-root:hover {
+    background-color: $primaryDark;
+  }
+}

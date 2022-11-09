@@ -1,0 +1,597 @@
+.self-audit {
+    .align-center {
+        align-items: center;
+    }
+
+    .add-another-question-button {
+        width: 15.625rem;
+        height: 3.125rem;
+        background-color: $primaryBlue;
+    }
+
+    .add-circle-outline-icon-wrapper {
+        color: $primaryDark;
+        cursor: pointer;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .add-additional-info {
+        width: 312.5rem;
+        color: $secondaryGrayLight;
+    }
+
+    .add-question-text-feild-wrapper {
+        width: 10px;
+        color: $primaryDark;
+        font-size: 16px;
+    }
+
+    .add-circle-outline-icon-wrapper:hover {
+        color: $primaryBlue;
+    }
+
+    .archive-button {
+        color: $mid-dark-gray;
+    }
+
+    .archive-button:hover {
+        background-color: $white;
+        cursor: no-drop;
+    }
+
+    .bold-font {
+        font-weight: bold;
+    }
+
+    .border-bottom-none {
+        border-bottom: none;
+    }
+
+    .custom-button-size {
+        width: 9.375rem;
+        margin-bottom: 6.25rem;
+        margin-right: 0.063rem;
+    }
+
+
+    .close-info-modal {
+        float: right;
+        margin-top: 0.625rem;
+        margin-right: 0.938rem;
+    }
+
+
+    .cusor-pointer {
+        cursor: pointer;
+    }
+
+    .custom-divider {
+        width: 95%;
+        margin-block: auto;
+    }
+
+    .cancel-audit-button {
+        width: 9.375rem;
+        height: 3.125rem;
+        color: $primaryDark;
+        border-color: $primaryDark;
+        margin-right: 0.063rem;
+    }
+
+    .cancel-audit-button:hover {
+        color: $primaryBlue;
+        background-color: $white;
+    }
+
+    .city-county-state-label {
+        font-size: 1rem;
+        white-space: nowrap;
+        font-weight: 400;
+    }
+
+    .chapter-part {
+        width: 18.75rem;
+        background-color: $secondaryGrayLight;
+    }
+
+    .delete-audit-question-button {
+        color: $primaryDark;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .delete-audit-question-button:hover {
+        color: $primaryBlue;
+    }
+
+    .display-block {
+        display: block;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .error {
+        font-size: 14px;
+        color: $error-text;
+        margin-left: 8px;
+        margin-bottom: 5px;
+        margin-top: 0px !important;
+    }
+
+    .field-icon:hover {
+        cursor: pointer;
+    }
+
+    .form-label {
+        color: $primaryDark;
+    }
+
+    .font-16 {
+        font-size: 1rem;
+    }
+
+    .fw-600 {
+        font-weight: 600;
+    }
+
+    .form-helper-text {
+        color: $error-text;
+        margin-left: 0.125rem;
+    }
+
+    .form-helper-text-color {
+        color: $error-text
+    }
+
+    .follow-up-button {
+        color: $primaryDark;
+        font-size: 1rem;
+        height: 0rem;
+        font-weight: 0,
+    }
+
+    .follow-up-button:hover {
+        background-color: $white;
+        color: $primaryBlue;
+    }
+
+    .info-icon-wrapper {
+        margin-top: 1.063rem;
+        align-items: center;
+        margin-left: 2.063rem;
+    }
+
+    .icon-wrapper {
+        cursor: move;
+    }
+
+    .input-label-wrapper {
+        color: $primaryDark;
+        text-align: center;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .labels-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .loader-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+
+    .light-font {
+        font-weight: lighter;
+    }
+
+    .min-width-650 {
+        min-width: 40.625rem;
+    }
+
+    .ml-10 {
+        margin-left: 0.625rem;
+    }
+
+    .mr-20 {
+        margin-right: 1.25rem;
+    }
+
+    .ml-40 {
+        margin-left: 2.5rem;
+    }
+
+    .ml-50 {
+        margin-left: 3.125rem;
+    }
+
+    .mt-15 {
+        margin-top: 0.938rem;
+    }
+
+    .mt-20 {
+        margin-top: 1.25rem;
+    }
+
+    .max-height-80vh {
+        max-height: 80vh;
+    }
+
+    .no-sa-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .new-question-text-field {
+        width: 312.5rem !important;
+        background-color: $secondaryGrayLight;
+    }
+
+    .ordinance-code {
+        width: 31.25rem;
+        background-color: $secondaryGrayLight;
+    }
+
+    .pb-0 {
+        padding-bottom: 0rem;
+    }
+
+    .pt-26 {
+        padding-top: 1.625rem;
+    }
+
+    .pb-20 {
+        padding-bottom: 1.25rem;
+    }
+
+    .pr-15 {
+        padding-right: 0.938rem;
+    }
+
+    .pl-18 {
+        padding-left: 1.125rem;
+    }
+
+    .pl-5 {
+        padding-left: 0.313rem;
+    }
+
+    .pr-5 {
+        padding-right: 0.313rem;
+    }
+
+    .page-title {
+        font-size: 35px;
+        position: relative;
+        font-weight: bold;
+        font-family: "Urbanist", sans-serif;
+        color: $primaryDark;
+    }
+
+    .page-title::after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid $primaryDark;
+        width: 92px;
+        bottom: -9px;
+    }
+
+    .publish-button {
+        width: 9.375rem;
+        height: 3.125rem;
+        margin-right: 0.125rem;
+        background-color: $primaryBlue;
+    }
+
+    .question-wrapper {
+        height: 40.625rem;
+        margin-top: 1.875rem;
+        border-radius: 0.313rem;
+        opacity: 1;
+        overflow-y: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .question-label-block {
+        margin-top: 0.625rem;
+        margin-left: 0.625rem;
+        align-items: center;
+    }
+
+    .question-search-container {
+        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0rem 0rem 0.625rem $shadow-black;
+        opacity: 1;
+        margin-top: 1.25rem;
+        padding-top: 1.875rem;
+    }
+
+    .question-category-table-container {
+        padding-left: 0.313rem;
+        padding-right: 0.313rem;
+        max-height: 80vh;
+        background-color: $off-white;
+    }
+
+    .question-category-table-container::-webkit-scrollbar {
+        width: 0.625rem;
+    }
+
+    .question-category-table-container::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 0.938rem;
+        height: 2.813rem;
+    }
+
+    .question-category-table-header {
+        background-color: $off-white;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .question-category-table-cell:hover {
+        background-color: $off-white;
+    }
+
+    .question-version {
+        color: $secondaryGray;
+        font-weight: lighter;
+        font-size: 1rem;
+        margin-top: 1.125rem;
+        width: max-content;
+    }
+
+    .question-block {
+        margin-bottom: 1.25rem;
+        margin-left: 0.063rem;
+        margin-right: 0.063rem;
+        margin-top: 0.125rem;
+        padding-top: 0.938rem;
+        align-items: center;
+        box-shadow: 0rem 0rem 0.625rem $shadow-black;
+        border-radius: 0.313rem;
+        opacity: 1;
+    }
+
+    .question-wrapper::-webkit-scrollbar-thumb {
+        background-color: $secondaryGray;
+        border-radius: 0.313rem;
+    }
+
+    .question-wrapper::-webkit-scrollbar-track {
+        background-color: $secondary-off-white;
+    }
+
+    .question-wrapper::-webkit-scrollbar {
+        width: 0.625rem;
+    }
+
+    .question-version-text-field {
+        width: 5rem;
+        text-align: center;
+        background-color: $secondaryGrayLight;
+        padding-bottom: 0.625rem;
+        padding-top: 0.625rem;
+    }
+
+    .styled-dailouge-wrapper {
+        height: 100%;
+        width: 100%;
+
+        .dialogContent {
+            margin-top: 3.75rem;
+            margin-left: 1.875rem;
+            margin-right: 1.875rem;
+            justify-content: center;
+            overflow-wrap: break-word;
+            font-size: 1.875rem;
+            text-align: center;
+        }
+    }
+
+    .self-audit-question-color {
+        color: $primaryDark;
+    }
+
+    .self-audit-question-hover {
+        &:hover {
+            color: $primaryBlue !important;
+            background-color: transparent;
+        }
+    }
+
+    .self-audit-question-category {
+        height: 31.25rem;
+    }
+
+    .spanBox {
+        margin: 30px !important;
+        font-size: 26px !important;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .styled-button-wrapper {
+        margin: 0 auto;
+
+        @media only screen and (min-width: 80rem) and (max-width: 93.688rem) {
+            max-width: 34.375rem;
+        }
+
+        @media (min-width: 93.75rem) {
+            max-width: 61.063rem;
+        }
+
+        .dialogActions {
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    .search-icon {
+        color: $Gray44;
+        font-size: medium;
+    }
+
+    .search-button {
+        width: 9.375rem;
+        height: 63%;
+    }
+
+    .search-button:hover {
+        background-color: $primaryBlue;
+    }
+
+    .self-audit-question-container {
+        padding-top: 1.625rem;
+    }
+
+    .save-exit-button {
+        width: 9.375rem;
+        height: 3.125rem;
+        background-color: $primaryBlue;
+    }
+
+    .text-pin-wrapper {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $primaryBlue;
+    }
+
+    .text-pin {
+        font: var(--unnamed-font-style-normal) normal medium 1.25rem/1.5rem var(--unnamed-font-family-urbanist);
+        text-align: left;
+        letter-spacing: 0rem;
+        color: $white;
+        opacity: 1;
+        margin: auto;
+    }
+
+    .text-feild-search-wrapper {
+        width: -webkit-fill-available;
+    }
+
+    .text-feild-wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding-right: 10px;
+        width: 530px;
+    }
+
+    .text-feild-add-city-county-state {
+        width: -webkit-fill-available;
+        margin-bottom: 0.313rem;
+    }
+
+    .title-wrapper {
+        font-weight: bold;
+    }
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .tooltip-content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px !important;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .text-align-right {
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .table-row-container {
+        height: 5rem;
+        border-bottom: 0.063rem solid $Gray44;
+    }
+
+    .table-row-container:last-child td {
+        border: 0;
+    }
+
+    .table-row-container:last-child th {
+        border: 0;
+    }
+
+    .table-container-background-color {
+        background-color: $off-white;
+    }
+
+
+    .width-webkit-fill-available {
+        width: -webkit-fill-available;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+
+    .width-20 {
+        width: 20%;
+    }
+
+    .width-30 {
+        width: 30%;
+    }
+
+    .width-50 {
+        width: 50%;
+    }
+
+    .width-59 {
+        width: 59%;
+    }
+
+    .word-break-all {
+        word-break: break-all;
+    }
+    
+    .MuiFilledInput-root{
+        height: inherit;
+    }
+}
+
+.notify-urer-diaglog-wrapper{
+    & .MuiFilledInput-root::before {
+        border-bottom: none !important;
+    }
+    
+    .MuiFormControl-root {    
+        padding-top: 0px;
+        padding-bottom: 0px,
+    }
+}
+//This is special case where Mui tooltip will place there markup outside the contanier
+// so to handle this below code has been added
+
+.MuiTooltip-popper .MuiTooltip-tooltip {
+
+    .view-more-wrapper {
+        cursor: pointer;
+    }
+}

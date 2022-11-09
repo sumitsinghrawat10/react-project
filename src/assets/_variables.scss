@@ -1,0 +1,122 @@
+//Colors
+// ========================================
+
+// New Primary Colors
+$primaryLight: #00b9dc;
+$primaryBlue: #233ce6;
+$primaryDark: #001e46;
+
+// Old Primary Colors
+// $primaryLight: #89cdda;
+// $primaryBlue: #0070a2;
+// $primaryDark: #1f343d;
+
+// Old Secondary Colors
+// $secondaryGray: #b1b1b1;
+// $secondaryGrayLight: #f9f9f9;
+// $secondaryRed: #ff6d6d;
+
+// New Secondary Colors
+$secondaryGray: #b1b1b1;
+$secondaryGrayLight: #f4f5f8;
+$secondaryRed: #ff6d6d;
+$GrayLight: #f9f9f9;
+
+// Grays
+$light-gray: lightgray;
+$dark-gray: gray;
+$mid-dark-gray: #00000042;
+
+
+// White >> Grays >> Black Colors
+$white: #fff;
+$off-white: #f8f7f7;
+$secondary-off-white: #f0eded;
+$gray-100: #f5f5f5;
+$gray-200: #eaebed;
+$gray-300: #d8d8da;
+$gray-400: #c6c6c6;
+$gray-500: #a3a3a3;
+$gray-600: #757575;
+$gray-700: #666666;
+$gray-800: #474747;
+$gray-900: #333333;
+$black: #111111;
+$true-black: #000000;
+$shadow-black: #0000001a;
+
+$shade-black: #00000024;
+$gray-scroll: #d8e1e8;
+
+$shadow-dark: #00000029;
+$mid-black: #00000099;
+
+$Gray44: #707070;
+// Error / Warning / Alerts colors
+// ========================================
+$error-text: #d32f2f;
+$error-red: #ff0000;
+
+//Other color shades
+// ========================================
+// $light-blue: #03b3ff;
+// $bg-light-blue: #0096da;
+
+$dark-blue-hover: #0072e5;
+
+// Body
+// ========================================
+
+// Fonts
+// ========================================
+$default-font-name: "Urbanist", sans-serif;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+//$line-height-base: (19 / 14); // ~1.35714286
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// Headers / Titles
+// ========================================
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 0.875rem;
+$h6-font-size: 0.875rem;
+
+// Modals / Dailog / SWAL
+// ========================================
+$zindex-modal-backdrop: 1051;
+$zindex-modal: 1052;
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: 0.6;
+
+// Breakpoints for all devices
+// ========================================
+$mobile-width: 0px;
+$tablet-width: 768px;
+$laptop-width: 1024px;
+$desktop-width: 1366px;
+$desktop-xl-width: 1900px;
+
+// Links
+// ========================================
+
+// Forms
+// ========================================
+    // Vertical scroll
+        $scroll-height: 6px;
+        $scroll-width: 10px;
+        $scroll-thumb-radius: 8px;
+
+// MUI override
+// ========================================
+
+// Bootstrap override
+// ========================================
+
+//pop up page title
+// ========================================
+$popup-title-size: 1.25rem;
+
+$profile-separator-color :#E1E5FC;

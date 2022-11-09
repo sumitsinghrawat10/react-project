@@ -1,0 +1,443 @@
+.vehicles-index-container {
+  .AddCircleOutlineIconWrapper {
+    color: $primaryDark;
+    cursor: pointer;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+
+    :hover {
+      color: $primaryBlue;
+    }
+  }
+  .header-align {
+    align-items: baseline;
+  }
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .VehicleContainer {
+    margin-right: 1.875rem !important;
+  }
+
+  .VehicleTable {
+    width: 26.25rem !important;
+    height: 26.688rem !important;
+    border-radius: 0rem !important;
+    opacity: 1 !important;
+  }
+
+  .VehicleTableRow {
+    height: 3.125rem;
+  }
+
+  .NoLicensessText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+
+  .AllVehicleContainer {
+    min-width: 100%;
+    width: 17.5rem;
+    overflow-x: auto;
+    opacity: 1;
+  }
+
+  .AllVehicleContainer::-webkit-scrollbar-thumb {
+    background-color: $secondaryGray;
+    border-radius: 0.313rem;
+  }
+  .AllVehicleContainer::-webkit-scrollbar-track {
+    background-color: $white;
+  }
+  .AllVehicleContainer::-webkit-scrollbar {
+    height: 0.625rem;
+  }
+
+  .VehicleImage {
+    height: 19.688rem !important;
+    width: 26.25rem !important;
+    background: transparent 0% 0% no-repeat padding-box;
+  }
+
+  .SeeMoreButton {
+    width: 22.75rem;
+    height: 4.188rem !important;
+    background-color: $primaryBlue;
+  }
+  .data-empty-text {
+    text-align: center;
+  }
+  .SeeMoreButton:hover {
+    background-color: $primaryDark;
+  }
+
+  .LeftCell {
+    text-align: left !important;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    font-family: $default-font-name;
+    letter-spacing: 0.025rem !important;
+    color: $primaryDark !important;
+    opacity: 1 !important;
+    padding-left: 2.813rem !important;
+    border-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .RightCell {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    font-family: $default-font-name;
+    letter-spacing: 0.025rem;
+    color: $primaryDark;
+    opacity: 1;
+    padding-right: 2.813rem !important;
+    border-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .VehicleTitle {
+    border-bottom: 0rem solid rgba(224, 224, 224, 1) !important;
+  }
+
+  .VehicleCardHeading {
+    height: 1.5rem;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 1.25rem;
+    font-family: $default-font-name;
+    color: $primaryDark;
+    opacity: 1;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .Vehicle-Search-Container {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shadow-black;
+    opacity: 1;
+    margin-top: 1.25rem;
+    padding-top: 1.875rem;
+  }
+
+  .Separator {
+    border: 0rem solid $primaryBlue !important;
+    opacity: 0.8 !important;
+    color: $primaryBlue;
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
+    margin-bottom: 0rem;
+  }
+
+  .VehicleImageContainer {
+    margin-bottom: 1.25rem;
+  }
+
+  .WarningAmberIconWrap {
+    color: $secondaryRed;
+    padding-bottom: 0.313rem;
+    font-size: 1.5rem !important;
+  }
+  .select-field {
+    height: 2rem;
+  }
+  .drop-down {
+    height: 2rem;
+  }
+  .vehicleheading {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  // add vehicle form css
+  .vehicle-btns-wrapper {
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vehicle-btns-wrapper p {
+    margin-bottom: 0;
+  }
+  .vehicle-btns-wrapper p svg {
+    margin-right: 5px;
+  }
+  .vehicle-import-form {
+    margin-top: 1.25rem;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+  .selected-driver-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $dark-gray;
+  }
+  .DropZone {
+    height: 17.8125rem;
+    width: 61.5rem;
+    background-color: $secondaryGrayLight;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .ImportButton {
+    padding-right: 0.8125rem;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    font-family: $default-font-name;
+    cursor: pointer;
+  }
+  .HorizontalRule {
+    display: block;
+    height: 0;
+    border-top: 0.1875rem solid $primaryBlue;
+    padding: 0;
+    margin: 1em -0.625rem;
+  }
+  .primary-blue {
+    color: $primaryBlue;
+  }
+  .upload-successfully {
+    margin-bottom: -0.625rem;
+    margin-left: -0.5rem;
+    margin-top: 0.375rem;
+  }
+  .FileSuccessMessage {
+    color: rgba(0, 150, 218, 0.6);
+    margin-left: 0.3125rem;
+  }
+  .FileNameIconWrapper {
+    font-size: 0.8125rem;
+    margin-top: 1em;
+    min-height: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .SeeDetailsLink {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    font-weight: $font-weight-bold;
+    margin-left: 0.5rem;
+    color: $primaryDark;
+    cursor: pointer;
+    &:hover {
+      color: $primaryBlue !important;
+    }
+  }
+  .CrossIconBtn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .btn-outer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .vehicle-manual-form {
+    padding-left: 2.5rem;
+  }
+  .vehicle-background-clip {
+    background-clip: content-box;
+  }
+  .flex-container {
+    display: flex;
+  }
+
+  .flex-child-year {
+    min-width: 5.625rem;
+  }
+  .flex-child-make {
+    min-width: 9.375rem;
+  }
+  .flex-child-model {
+    min-width: 7.5rem;
+  }
+  .flex-child-license {
+    min-width: 15rem;
+  }
+  #vehicledriverid {
+    padding-top: 0rem;
+    background-color: transparent;
+    color: $primaryDark;
+  }
+  .input-placeholder-color{
+    color: $secondaryGray;
+  }
+  .vehicle-form-helper-text {
+    margin-top: 0rem;
+    line-height: 0.9rem;
+  }
+  .add-vehcile-submit-button {
+    padding-left: 0.75px;
+  }
+
+  .swal2-styled.swal2-confirm {
+    background-color: $primaryBlue;
+  }
+  .vehicle-file-wrapper {
+    width: 15.313rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .select-driver-padding{
+    div {
+      padding: 0rem 0rem 0rem 0.8125rem !important;
+    }
+  }
+  
+  //import vehicle response modal
+
+  .CloseDialog {
+    .close-assign-license {
+      float: right;
+      margin-top: 0.625rem;
+      margin-right: 0.938rem;
+    }
+  }
+
+  .DialogTop {
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 1.875rem !important;
+    color: $primaryDark !important;
+  }
+
+  .ResultRow {
+    min-width: 34.375rem !important;
+    margin-top: 0.938rem;
+  }
+  .FailedRow {
+    min-width: 34.375rem !important;
+    margin-top: 0.313rem;
+  }
+
+  .ErrorMsgDiv {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 1.625rem;
+    max-width: 35.25rem;
+  }
+
+  .HeadingDownloadWrapper {
+    display: flex;
+    padding: 0 0;
+  }
+
+  .DownloadText {
+    color: $primaryBlue !important;
+    &:hover {
+      cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+
+  .DownloadButton {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 0;
+    color: $primaryDark !important;
+    &:hover {
+      text-decoration: none;
+      color: $primaryBlue !important;
+      cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .dialog-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-left: 1.25rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .dialog-box {
+    overflow-y: auto;
+  }
+
+  .submit-wrapper {
+    padding-left: 0.063rem;
+  }
+  .error-alarm-system {
+    color: $error-text;
+    font-size: 0.8571428571428571rem;
+    font-family: $default-font-name;
+    font-weight: 400;
+    padding-left: 0.875rem;
+  }
+  .vehicle-upload-image {
+    display: flex;
+    justify-content: row;
+  }
+  .close-dialog {
+    float: right;
+    padding-top: 1.6rem;
+    margin-right: 1.25rem;
+    cursor: pointer;
+  }
+  .vehicle-submit-wrapper {
+    display: flex;
+    padding-left: 0rem;
+  }
+  .vehicle-label-span {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .vehicle-import-download-wrapper {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-right: 1.8rem;
+    margin-top: 1.063rem;
+  }
+  .vehicle-save-button {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 3.613rem;
+  }
+  .mui-label-styling {
+    .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.Mui-focused,
+    .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.MuiFormLabel-filled {
+      transform: translate(0.938rem, 0.125rem) scale(0.7);
+    }
+    .MuiFormHelperText-sizeMedium  {
+      background: $white;
+      margin: 0;
+      padding: 0.1875rem 0.3125rem;
+    }
+  }
+  .addvehicle-submit-div {
+    padding-top: 2.5rem;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./breakpoints.scss";
+
+//Media Query for sop pages
+@include media(">phone", "<=desktop") {
+  .SopDetailsWrapper {
+    .LeftGreyBox h5 {
+      font-size: 1rem;
+    }
+  }
+}

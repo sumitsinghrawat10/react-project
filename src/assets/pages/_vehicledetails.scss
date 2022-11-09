@@ -1,0 +1,126 @@
+.vehicle-details-container {
+  background-color: $white;
+  padding-top: 1.625rem;
+  .BackButtonWrapper {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 28.74rem;
+  }
+  .DriverDetailBox {
+    background: $secondaryGrayLight 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shadow-black;
+    opacity: 1;
+  }
+  .VehicleDetailBox {
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shadow-black;
+    opacity: 1;
+  }
+  .IconWrap {
+    font-size: $h3-font-size;
+  }
+  .NameTitle {
+    font-weight: 600;
+    color: $primaryDark;
+    margin-left: 2.188rem;
+    margin-top: -2.375rem;
+    font-size: 1.56rem;
+  }
+  .TitleWrapper {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    font-family: $default-font-name;
+    letter-spacing: 0.025rem;
+    color: $primaryDark;
+    opacity: 1;
+    padding-bottom: 0.313rem;
+  }
+  .TitleValue {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: $h3-font-size;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+  }
+  .TitleDetails {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    font-family: $default-font-name;
+    letter-spacing: 0.025rem;
+    color: $primaryDark;
+    opacity: 1;
+  }
+  .LinkWrapper {
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+    cursor: pointer;
+    :hover {
+      color: $primaryBlue !important;
+    }
+  }
+  .LinkWrapper:hover {
+    color: $primaryBlue !important;
+  }
+  .WarningIconWrap {
+    color: $secondaryRed;
+    font-size: 1.35rem;
+  }
+
+  .ImageBox {
+    position: relative;
+
+    .EditImageBtn {
+      border-radius: 50%;
+      position: absolute;
+      right: 0.938rem;
+      bottom: 0.938rem;
+      background: $white 0% 0% no-repeat padding-box;
+      border-color: $white;
+      border: none;
+      box-shadow: 0px 0px 0.625rem #0000009e;
+      width: 1.75rem;
+      height: 1.75rem;
+
+      .ThreeDotIcon {
+        width: 0.875rem;
+      }
+    }
+    .MenuButton {
+      font-weight: 600;
+    }
+    .dropdown-item:hover {
+      color: $primaryBlue;
+      background-color: $white !important;
+    }
+    .dd-menu {
+      border-radius: 0.625rem;
+    }
+  }
+    .flex-container {
+      display: flex;
+    }
+}

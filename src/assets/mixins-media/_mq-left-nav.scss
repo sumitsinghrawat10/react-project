@@ -1,0 +1,108 @@
+@import "./breakpoints.scss";
+
+//Media Query for Left Navigation page
+@include media(">phone", "<=desktop") {
+  .desktop-drawer {
+    display: none;
+  }
+  .tablet-drawer {
+    display: flex;
+  }
+  .right-arrow {
+    display: flex;
+    z-index: 1300;
+    height: 2rem;
+    width: 2rem;
+    align-self: self-end;
+    margin-right: -14px;
+    margin-top: 150px;
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: none;
+  }
+  .hide-right-arrow {
+    display: none;
+  }
+
+  .chorus-logo {
+    margin: 1.25rem 0rem;
+    width: 11.27rem;
+  }
+  .left-arrow {
+    display: flex;
+    z-index: 1300;
+    height: 2rem;
+    width: 2rem;
+    align-self: self-end;
+    margin-right: -14px;
+    margin-top: 150px;
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: none;
+  }
+  .Avatar {
+    height: 45px;
+    width: 45px;
+  }
+  .hide-left-arrow {
+    display: none;
+  }
+  .welcome {
+    display: none;
+  }
+  .user-name {
+    padding-top: 10px;
+    padding-left: 0;
+    font-size: 15px;
+    word-break: unset;
+  }
+  .user-display {
+    height: 4.2rem;
+    .user-name{
+      display: none;
+    }
+    .user-role{
+      display: none;
+    }
+  }
+  .user-role {
+    padding-bottom: 25px;
+    line-height: 0px;
+  }
+  .nav-button {
+    padding-top: 6px;
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  .edit-profile-button {
+    visibility: hidden;
+  }
+  .MuiPaper-root.MuiDrawer-paper {
+    background-color: $secondaryGrayLight;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .backdrop-expand {
+    .MuiBackdrop-root {
+      z-index: 1199;
+    }
+    .MuiCircularProgress-root {
+      display: none;
+    }
+  }
+}
+
+@include media(">desktop") {
+  .desktop-drawer {
+    display: flex;
+  }
+  .tablet-drawer {
+    display: none;
+  }
+  .backdrop-expand {
+    display: none !important;
+  }
+}

@@ -1,0 +1,18 @@
+//Common CSS
+@import "variables.scss";
+@import "form.scss";
+@import "global.scss";
+@import "mui-global";
+
+//Component CSS
+@import "component/leftSide.scss";
+@import "component/rightSide.scss";
+@import "component/leftNav.scss";
+@import "component/singleselect";
+@import "component/icons";
+@import "component/badgeBoxCard";
+@import "component/dialogButton";
+@import "component/backIconButton";
+
+//Pages CSS
+@import "pages/index.scss";

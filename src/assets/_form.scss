@@ -1,0 +1,75 @@
+.form-container {
+  .step-label {
+    font-size: 1.25rem;
+  }
+  .input-form {
+    background-color: $secondaryGrayLight !important;
+    border-radius: 0rem;
+    border: none;
+    margin-bottom: 0.9375rem;
+    width: 100%;
+    .MuiInputBase-colorPrimary {
+      background-color: transparent !important;
+    }
+    div::before {
+      border-bottom: none !important;
+    }
+    fieldset {
+      border: none;
+    }
+    input::-webkit-input-placeholder {
+      color: $secondaryGray;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    &.select-field {
+      &::before {
+        border-bottom: none !important;
+        content: "" !important;
+      }
+      div.MuiSelect-select {
+        padding: 1.2rem 2rem 0.8125rem 1rem;
+        font-size: 1rem;
+      }
+      svg {
+        color: $primaryBlue !important;
+      }
+      .input-placeholder {
+        color: $secondaryGray;
+        font-size: 1rem;
+        font-weight: normal;
+        opacity: 0.6;
+      }
+    }
+  }
+  .search-placeHolder{
+    input::-webkit-input-placeholder {
+      color: $Gray44;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  .search-icon {
+    font-size: medium;
+    color: #b1b1b1;
+    width:16px;
+    height: 16px;
+    margin-left :0.625rem;
+  }
+  .select-wrap {
+    @extend .input-form;
+    margin-bottom: 0rem;
+  }
+  .input-text-overide-width {
+    @extend .input-form;
+    .MuiFilledInput-input {
+      width: 94% !important;
+    }
+  }
+  //========= We can use this class in form fields(select Box,Input Type etc) ==========
+  .form-field-error {
+    color: $error-text;
+    font-size: 0.857143rem;
+    padding-left: 0.8125rem;
+  }
+}

@@ -1,0 +1,121 @@
+.client-dashboard-container {
+  .MainContainer {
+    height: 100vh;
+  }
+
+  .Title {
+    color: $primaryDark;
+    font-weight: bold !important;
+    font-family: $default-font-name;
+    font-size: 35px !important;
+  }
+
+  .ButtonCancelClient {
+    color: $primaryDark;
+    cursor: pointer;
+    &:hover {
+      color: $primaryBlue;
+      cursor: pointer;
+    }
+  }
+
+  .FooterWrapper {
+    position: relative;
+    flex: 1;
+    height: calc(100vh - 79vh);
+  }
+
+  .HrWrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 68px;
+    color: $primaryBlue;
+  }
+
+  .ButtonAddWrapper {
+    position: absolute !important;
+    bottom: 14px;
+    right: 0px;
+    margin-bottom: 0rem !important;
+  }
+  .client-error-msz{
+    color: $error-text;
+      font-weight: 400;
+      font-size: 0.8571rem;
+      line-height: 7px;
+      text-align: left;
+      margin-top: 0.6rem;
+      margin-right: 0.875rem;
+      margin-bottom: 0.4rem;
+      margin-left: 0.875rem;
+  }
+
+  .ButtonResize{
+    height: 3.125rem;
+    width: 10rem;
+    font-weight: 400;
+  }
+  .ErroMsgreposition .client-error-msz {
+    margin-top: -0.4rem;
+  }
+
+  .ClinetAdressFont
+  {
+    .MuiInputBase-root.MuiOutlinedInput-root{
+    font-Size: 1rem;
+     color: $black;
+  }
+}
+  .DialogTop {
+    text-align: center;
+    font-weight: bold !important;
+    font-family: $default-font-name;
+    font-size: 35px !important;
+    padding-top: 50px !important;
+    color: $primaryDark !important;
+  }
+
+  .DialogBottom {
+    justify-content: center !important;
+    padding-bottom: 50px !important;
+  }
+
+  .DateError {
+    color: $error-text;
+    font-size: 13.71px;
+    margin-left: 0.625rem;
+  }
+
+  .ClientSubTitle {
+    color: $primaryDark;
+    font-weight: bold !important;
+    font-family: $default-font-name;
+    font-size: $font-size-base !important;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .TextFieldWrapper {
+    margin-left: 0.625rem !important;
+    margin-right: 0.625rem !important;
+    width: 21.75rem !important;
+  }
+
+  .ZipcodeTextFieldWrapper {
+    width: 13.688rem !important;
+  }
+
+  .ContactTextFieldWrapper {
+    margin-left: 0rem !important;
+    margin-right: 1.25rem !important;
+  }
+
+  .IdTextFieldWrapper {
+    margin-left: 0rem !important;
+    margin-right: 1.25rem !important;
+  }
+
+  .IdBox {
+    margin-left: 0.125rem;
+  }
+}

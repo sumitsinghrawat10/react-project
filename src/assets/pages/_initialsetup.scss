@@ -1,0 +1,398 @@
+.initial-setup-wrapper {
+
+  //Add Location Dialog Page
+  &.employee-dropzone-wrapper{
+    max-width: 61.063rem;
+    margin: auto;
+  }
+  .MuiFormHelperText-sizeMedium  {
+    background: $white;
+    margin: 0;
+    padding: 0.1875rem 0.3125rem;
+  }
+  .MuiFilledInput-input
+  {
+    width: -webkit-fill-available;
+  }
+  .mt-25 {
+    margin-top: 23px;
+  }
+  .Card {
+    padding: 2.5rem;
+    width: 100%;
+    margin: 3.125rem auto !important;
+    box-shadow: 0px 0px 1.25rem $shadow-black;
+    border-radius: 0.313rem;
+
+    .spanBox {
+      margin: 1.875rem !important;
+      font-size: 1.625rem !important;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+  }
+  @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+    .Card {
+      max-width: 34.375rem;
+    }
+  }
+  @media (min-width: 1500px) {
+    .Card {
+      max-width: 61.063rem;
+      padding: 3.75rem;
+    }
+  }
+
+  .ButtonWrapper {
+    margin: 0 auto;
+    margin: 1.25rem !important;
+  }
+  @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+    .ButtonWrapper {
+      max-width: 34.375rem;
+    }
+  }
+  @media (min-width: 1500px) {
+    .ButtonWrapper {
+      max-width: 61.063rem;
+    }
+  }
+  // location.tsx page css
+  .Heading {
+    font-size: 1.25rem;
+    color: $primaryDark;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  .UnincoratedText {
+    font-size: 1rem;
+    color: $secondaryGray;
+    float: right;
+  }
+  .Error {
+    font-size: 0.875rem;
+    color: $error-text;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+  }
+
+  .ErrorLocation {
+    font-size: 0.875rem;
+    color: $error-text;
+    position: relative;
+    bottom: 0.625rem;
+  }
+
+  .CheckBoxError {
+    font-size: 0.875rem;
+    color: $error-text;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+    position: relative;
+    bottom: 0.625rem;
+  }
+
+  //employee.tsx page css
+
+  .CrossIconBtn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .AddEmployeeButton {
+    padding-left: 1.25rem;
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    cursor: pointer;
+    span {
+      padding-left: 0.625rem;
+      font-size: 1rem;
+      color: $primaryDark;
+      font-weight: 600;
+    }
+  }
+
+  .DropZone {
+    height: 17.813rem;
+    width: 100%;
+    background-color: $secondaryGrayLight;
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  .dropZoneBox {
+    margin-top: 3.75rem;
+  }
+
+  .Title {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .FileSuccessMessage {
+    color: rgba(0, 150, 218, 0.6);
+    margin-left: 0.313rem;
+  }
+
+  .CancelButton {
+    justify-content: end;
+    padding-right: 0.813rem;
+    font-size: 1rem;
+    &:hover {
+      color: $primaryBlue;
+      cursor: pointer;
+    }
+  }
+
+  .ImportButton {
+    justify-content: end;
+    padding-right: 0.813rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .FileNameIconWrapper {
+    font-size: 0.813rem;
+    margin-top: 1em;
+    min-height: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .FileNameWrapper {
+    margin-left: 0.313rem;
+    color: $primaryDark;
+  }
+
+  .FileErrorMessage {
+    color: $error-red;
+  }
+
+  .HorizontalRule {
+    display: block;
+    height: 0px;
+    border-top: 3px solid $primaryBlue;
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .ArchiveLink {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    color: $primaryDark;
+    cursor: pointer;
+  }
+  .ArchiveLink:hover {
+    color: $primaryBlue !important;
+  }
+  .MuiFilledInput-root {
+    display: block;
+    width: 100%;
+  }
+  // license.tsx page
+
+  .CheckBoxWrapper {
+    margin-bottom: 1.6875rem;
+    @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+      display: block;
+    }
+    @media (min-width: 1500px) {
+      display: flex;
+    }
+  }
+
+  .AddLicenseButton {
+    padding-left: 0.75rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    padding-left: 0.625rem;
+    font-size: 1rem;
+    color: $primaryDark;
+    font-weight: 600;
+    &:hover {
+      color: $primaryBlue;
+    }
+  }
+
+  .circle-icon-position {
+    position: absolute;
+    left: 0px;
+  }
+
+  .WarningAmberOutlinedIconWrapper {
+    cursor: pointer;
+    color: $error-text;
+    padding-left: 0.625rem;
+    :hover {
+      color: $primaryDark;
+    }
+  }
+  // index.tsx page
+  .initial-container {
+    background-color: $white;
+    height: 100%;
+    min-height: 640px;
+    padding: 20%;
+    .step-label {
+      font-size: 1.25rem;
+    }
+
+    .next-btn {
+      width: 12.313rem;
+    }
+
+    .back-btn{
+      border: 1px solid $primaryDark;
+      color: $primaryDark;
+      background: $white;
+      &:hover {
+        border: 1px solid $primaryBlue;
+        color: $primaryBlue;
+      }
+    }
+  }
+
+  .TitleWithMargin {
+    margin-bottom: 4.375rem;
+  }
+  .RightContainer {
+    padding-top: 3.75rem;
+  }
+
+  .ButtonVariant5per {
+    margin: 0 auto;
+    @media only screen and (min-width: 1280px) and (max-width: 1499px) {
+      max-width: 34.375rem;
+    }
+    @media (min-width: 1500px) {
+      max-width: 61.063rem;
+    }
+    .dialogActions {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  .StepLabelContainer {
+    span {
+      font-size: 1.25rem;
+      color: $primaryDark !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  .Pt26 {
+    padding-top: 1.625rem;
+  }
+
+  .InitialSetupWrapper {
+    padding: 0px !important;
+    min-height: 331px !important;
+    background-color: $white;
+    .complete-setup {
+      font-size: 1.25rem !important;
+      text-align: center;
+      overflow-wrap: break-word;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .HeadingInitial {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    color: $primaryDark;
+    opacity: 1;
+    margin-bottom: 1.25rem;
+  }
+
+  .ButtonVariant5 {
+    width: 12.375rem !important;
+    margin: 0 auto !important;
+  }
+
+
+  .CancelBtn {
+    margin: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    &:hover {
+      color: $primaryBlue;
+      cursor: pointer;
+    }
+  }
+
+  .DownloadButton {
+    margin-left: auto;
+    margin-right: 0;
+    color: $primaryDark !important;
+    &:hover {
+      text-decoration: underline !important;
+      color: $primaryBlue !important;
+      cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  //dashboard index page for initial setup
+
+  .dashboard-initital-title::before {
+    content: "";
+    display: block;
+    border-bottom: 2px solid $primaryBlue;
+    width: 192px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
+  }
+  .dashboard-initital-title {
+    font-size: 3rem;
+
+    padding-top: 13rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: $primaryDark;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+  .ButtonWrap {
+    width: 198px !important;
+    margin: 0 auto !important;
+  }
+  
+  .add-employee-button-manually.MuiButtonBase-root.MuiButton-root
+  {
+    color:$primaryDark;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    &:hover {
+      color:$primaryBlue;
+      background-color: transparent;
+      border: none;
+    } 
+  }
+  .mui-label-styling{
+    .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.Mui-focused,
+    .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-formControl.MuiFormLabel-filled {
+      transform: translate(0.938rem, 0.125rem) scale(0.7) !important;
+      font-size: 1rem !important;
+    }
+  }
+  // Media query for Tablet view
+  @import "../mixins-media/mq-initial-setup";
+}

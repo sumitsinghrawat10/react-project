@@ -1,0 +1,25 @@
+@import "./breakpoints.scss";
+
+@include media(">=phone", "<=desktop") {
+  .NotificationsDetails {
+    min-height: 72vh;
+  }
+  .NotificationContentEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 28ch;
+  }
+}
+
+@include media(">desktop", "<desktop-xl") {
+  .NotificationsDetails {
+    min-height: 72vh;
+  }
+  .NotificationContentEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30ch;
+  }
+}

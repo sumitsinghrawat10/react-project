@@ -1,0 +1,37 @@
+.left-container {
+  background-color: $secondaryGrayLight;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0% 20%;
+  .heading {
+    color: $primaryDark;
+    position: relative;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 58px;
+  }
+  .chorus-logo{
+    height: 3.75rem;
+    margin-bottom: 1.75rem;
+    margin-top: 2rem;
+  }
+  .heading::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid $primaryBlue;
+    width: 25%;
+    position: relative;
+    bottom: -10px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 30px;
+    color: $primaryDark;
+    letter-spacing: 0px;
+  }
+  .logo-wrapper{
+    padding-bottom: 60%;
+  }
+}

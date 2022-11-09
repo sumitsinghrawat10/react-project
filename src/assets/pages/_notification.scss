@@ -1,0 +1,355 @@
+.notification-container {
+  .notification-sub-class {
+    padding-top: 1.25rem;
+    display: flex;
+  }
+
+  .MainContainer {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 50rem;
+    width: 50%;
+    padding: 0.4rem 0.563rem 0.2rem 0.3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: auto;
+  }
+  .MainContainer::-webkit-scrollbar {
+    width: 0.625rem;
+    height: 3.875rem;
+  }
+  .MainContainer::-webkit-scrollbar-thumb {
+    background-color: $secondaryGray;
+    border-radius: 0.313rem;
+  }
+  .MainContainer::-webkit-scrollbar-track {
+    background-color: $secondaryGrayLight;
+  }
+
+  .notification-state-label-unread {
+    color: $primaryBlue;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    padding-right: 4%;
+  }
+
+  .notification-state-label-read {
+    color: $Gray44;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    padding-right: 4%;
+  }
+
+  .NBar:hover .divCancelIconContainer {
+    background: $primaryBlue;
+  }
+
+  .NotificationTextLabel {
+    font-family: $default-font-name !important;
+    letter-spacing: 0.025rem;
+    color: $primaryDark;
+    font-weight: bold !important;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 96%;
+    padding: 2.375rem 1rem;
+  }
+
+  .divCancelIconContainer {
+   
+    padding: 2.375rem 1rem;
+    
+  }
+
+  .divCancelIconContainer:hover {
+    background-color: $primaryBlue !important;
+    cursor: pointer;
+    border-radius: 0.313rem;
+  }
+ .readBackgroundColor{
+  background: $white 0 0 no-repeat padding-box !important;
+ }
+
+ .UnReadBackgroundColor{
+  background: $secondaryGrayLight 0 0 no-repeat padding-box !important;
+}
+
+ 
+.NBar:hover .UnReadBackgroundColor{ background-color: $primaryBlue !important; }
+
+  .NBar {
+    display: flex;
+    width: 100% !important;
+   
+    border-radius: 0.313rem !important;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 0 0.675rem $light-gray;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+  .NBar:hover {
+    background-color: $primaryBlue !important;
+    cursor: pointer;
+  }
+
+  .NBar:hover > * {
+    color: $white !important;
+    cursor: pointer;
+  }
+  .NBar:hover div > * {
+    color: $white !important;
+    cursor: pointer;
+  }
+
+  .filter-row-wrapper {
+    margin-top: 3.75rem;
+  }
+  .filter-by-text-wrapper {
+    margin-top: 0rem;
+  }
+
+  .LinkWrapperActive {
+    font-weight: 600;
+    color: $primaryBlue;
+    text-decoration: none;
+    cursor: pointer;
+
+    :hover {
+      color: $primaryBlue !important;
+      cursor: pointer;
+    }
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+
+  .LinkWrapperInactive {
+    font-weight: 600;
+    color: $primaryDark;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryBlue !important;
+      cursor: pointer;
+    }
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+
+  .NotificationWrapper {
+    margin-left: auto;
+  }
+  .NotificationIcon {
+    text-align: left;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .HoverEffect {
+    :hover {
+      color: $white !important;
+      cursor: pointer;
+    }
+  }
+  .notification-content-ellipsis-wrraper{
+    width:100%;
+  }
+
+  .NotificationContentEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 55ch;
+  }
+
+  .NotificationContentNoEllipsis{
+    white-space: nowrap;
+  }
+
+  .TextCenter {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .NotificationsDetails {
+    width: 50%;
+    border-radius: 0.313rem !important;
+    box-shadow: 0 0 0.675rem $light-gray;
+    background: $white 0 0 no-repeat padding-box;
+    min-height: 75vh;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2%;
+  }
+  .notifyCancelIconContainer {
+    display: flex;
+    justify-content: end;
+    padding: 0.625rem 0.625rem;
+    color: $Gray44;
+  }
+
+  .notifyCancelIconContainer:hover {
+    cursor: pointer;
+  }
+  .notificationDesc::marker {
+    color: $primaryBlue;
+    font-size: 1.875rem;
+  }
+  .notificationUl {
+    margin: -0.938rem 2rem;
+  }
+  .notificationBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.475rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+  }
+  .notificationMarkDiv {
+    padding-left: 2rem;
+  }
+
+  .PrimaryButton {
+    width: 7.5rem;
+    height: 2.7rem !important;
+    font-size: 0.875rem !important;
+    margin-right: 1.25rem !important;
+  }
+  .notificationDetailsTitle {
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+  }
+
+  .notificationDetailsDescription {
+    margin-top: 3%;
+    overflow-y: auto;
+    height: 18rem;
+  }
+
+  .notificationDetailsDescription::-webkit-scrollbar {
+    width: 0.625rem;
+    height: 2.875rem;
+  }
+  .notificationDetailsDescription::-webkit-scrollbar-thumb {
+    background-color: $secondaryGray;
+    border-radius: 0.313rem;
+  }
+  .notificationDetailsDescription::-webkit-scrollbar-track {
+    background-color: $secondaryGrayLight;
+  }
+
+  .NotificationDetailsBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 67%;
+    @media only screen and (max-width: 75rem) {
+      margin-left: 60%;
+    }
+  }
+
+  .ReminderSelectMarginBottom {
+    margin-bottom: 05rem;
+    padding: 0rem 0rem 0rem 1.375rem !important;
+  }
+
+  .ReminderTextLabel {
+    margin-left: 0.5rem !important;
+    font-weight: bold;
+  }
+  .ReminderLabel {
+    margin-left: 2rem;
+    padding-top: 1.1rem;
+  }
+
+  .paddingSelectBox {
+    padding-left: 2.313rem;
+  }
+
+  .ActionControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 5px;
+  }
+
+  .input-form {
+    border-radius: 0rem;
+    border: none;
+    height: 2.7rem !important;
+
+    div::before {
+      border-bottom: none !important;
+    }
+    fieldset {
+      border: none;
+    }
+    input::-webkit-input-placeholder {
+      color: $secondaryGray;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    &.select-field {
+      &::before {
+        border-bottom: none !important;
+        content: "" !important;
+      }
+      div {
+        padding: 1rem 2rem 0.813rem 1rem;
+        font-size: 1rem;
+      }
+      svg {
+        color: $primaryBlue !important;
+      }
+      .input-placeholder {
+        color: $secondaryGray;
+        font-size: 1rem;
+        font-weight: normal;
+        opacity: 0.6;
+      }
+    }
+  }
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+  .bold-text {
+    font-weight: bold !important;
+  }
+  .margin-bottom {
+    margin-bottom: 1.375rem;
+  }
+
+  @media only screen and (min-width: $desktop-xl-width) {
+    .NotificationsDetails {
+      min-height: unset;
+      height: 41.4rem;
+    }
+  }
+  .selectionClass  *{
+    background-color: $primaryBlue;
+    color: $white;
+     
+  } 
+  
+  //Media query for Fnotifications
+  @import "../mixins-media/mq-notifications";
+
+}

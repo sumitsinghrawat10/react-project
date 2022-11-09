@@ -1,0 +1,9 @@
+@import "./breakpoints.scss";
+
+@include media(">phone","<=laptop"){
+    &.change-password-dialog-width .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper{
+    max-width: 36.438rem;
+    width: 36.438rem;
+    height: 41.313rem;
+  }
+}

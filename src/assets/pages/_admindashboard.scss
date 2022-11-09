@@ -1,0 +1,483 @@
+.admin-dashboard-container {
+  &.my-special-width .MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiDialog-paperScrollPaper{
+    max-width: 50rem;
+    width: 45rem;
+  }
+
+  .content-wrapper {
+    margin-top: 4.625rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .button-heading {
+    background-color: $primaryDark;
+    color: $white;
+  }
+  .button-heading:hover {
+    background-color: $primaryDark;
+    color: $white;
+  }
+
+  .required-wrapper {
+    color: $primaryBlue;
+    margin-top: 0.938rem;
+  }
+
+  .cancel-wrapper {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .close-assign-task {
+    float: right;
+    margin-top: 0.625rem;
+    margin-right: 0.938rem;
+  }
+
+  .Dialog-top-text {
+    text-align: center;
+    font-weight: bold !important;
+    font-family: $default-font-name !important;
+    font-size: 1.875rem !important;
+    color: $primaryDark !important;
+  }
+
+  .select-row-wrapper {
+    margin: 0.938rem;
+  }
+
+  .select-menu-error {
+    font-size: 0.875rem;
+    color: $error-text;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
+  }
+
+  .button-wrapper {
+    justify-content: right;
+  }
+
+  .button {
+    width: 9.375rem;
+  }
+  .formDarkHeader {
+    background-color: $primaryDark;
+    color: $white;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  .AddCircleOutlineIconWrapper {
+    background-color: $primaryBlue;
+    border-radius: 1.563rem;
+    color: $white;
+    width: 2.875rem !important;
+    height: 2.875rem !important;
+    padding: 0.875rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primaryDark;
+    }
+  }
+
+  .TextFieldWrapper {
+    padding: 2.063rem 1.25rem 2.063rem 0rem !important;
+    width: -webkit-fill-available !important;
+  }
+
+  .ButtonWrapperIndex {
+    padding-top: 1.75rem;
+  }
+
+  .SearchButton {
+    width: 12.375rem;
+
+    &:hover {
+      background-color: $primaryBlue !important;
+    }
+  }
+
+  .LoaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .SortingIcon {
+    display: inline;
+    cursor: pointer;
+  } 
+  .TableRowsWrapper {
+    color: $primaryDark !important;
+    font-size: 1rem !important;
+  }
+
+  .LicenseDetailWrapper {
+    color: $primaryDark;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .ActionWrapper {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $secondaryGray;
+    opacity: 1;
+    padding: 0.625rem 1.25rem 0rem 0rem;
+  }
+
+  .ClientNameWrap {
+    word-break: break-all;
+  }
+
+  //======viewClientDetails=======
+
+  .DashboardContainer {
+    padding-top: 1.625rem;
+  }
+
+  .SubTitleView {
+    color: $primaryDark;
+    font-weight: $font-weight-bold;
+    font-family: $default-font-name;
+    font-size: 1rem;
+    margin-top: 1.875rem;
+  }
+
+  .RowWrapperView {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    flex-wrap: initial;
+    width:54%;
+    text-overflow: ellipsis;
+    line-height: 1.563rem;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+  }
+
+  .StatusColorBlue {
+    color: $primaryBlue;
+  }
+
+  .StatusColorRed {
+    color: $error-red;
+  }
+
+  .InnerWrap {
+    margin-right: 5.625rem;
+  }
+
+  .HrLine {
+    border: 0.063rem solid $primaryBlue;
+  }
+
+  .ButtonWrapperView {
+    padding: 1.875rem 0rem 2rem 0rem;
+    margin-left: auto;
+  }
+
+  .ExportButtonView {
+    width: 12.375rem;
+
+    :hover {
+      background-color: $true-black !important;
+    }
+  }
+
+  .EditBackContainer {
+    margin-left: auto;
+  }
+
+  .EditBackWrapper {
+    text-align: left;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+    cursor: pointer;
+    &:hover{
+      color: $primaryBlue;
+    }
+  }
+
+  .TextPinWrapperView {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primaryBlue;
+  }
+
+  .TextPinView {
+    font: var(--unnamed-font-style-normal) normal medium 1.25rem/1.5rem
+      var(--unnamed-font-family-urbanist);
+    text-align: left;
+    letter-spacing: 0rem;
+    color: $white;
+    opacity: 1;
+    margin: auto;
+  }
+
+  .AnchorWrapper {
+    margin-left: 4.063rem;
+    text-decoration: none;
+  }
+
+  //====edit_client_detail====
+
+  .MainContainer {
+    height: 100vh;
+  }
+
+  .Title {
+    color: $primaryDark;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 2.188rem;
+    font-family: $default-font-name;
+  }
+
+  .SubTitleEdit {
+    color: $primaryDark;
+    font-weight: $font-weight-bold;
+    font-family: $default-font-name;
+    font-size: 1rem !important;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .TextFieldWrapperEdit {
+    margin-left: 0.625rem !important;
+    margin-right: 1.25rem !important;
+    width: 21.75rem !important;
+    margin-top: 0.625rem !important;
+  }
+
+  .ContactTextFieldWrapperEdit {
+    margin-left: 0rem !important;
+    margin-right: 0.625rem !important;
+    width: 21.75rem !important;
+    margin-top: 0.625rem !important;
+  }
+
+  .ZipcodeTextFieldWrapperEdit {
+    margin-left: 0rem !important;
+    margin-right: 1.25rem !important;
+    margin-top: 0.625rem !important;
+    width: 13.688rem !important;
+  }
+
+  .ButtonCancelEdit {
+    color: $primaryDark;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+    &:hover{
+      color: $primaryBlue;
+    }
+  }
+
+  .FooterWrapperEdit {
+    position: relative;
+    flex: 1;
+    height: calc(100vh - 79vh);
+  }
+
+  .HrWrapperEdit {
+    width: 100%;
+    position: absolute;
+    bottom: 6.825rem;
+    border-bottom: 1px solid $primaryBlue!important;
+  }
+
+  .ButtonAddWrapperEdit {
+    position: absolute !important;
+    bottom: 0rem;
+    right: 0rem;
+    margin-bottom: 0.75rem !important;
+    padding: 1.5rem 5.063rem 1.5rem 5.063rem !important;
+  }
+
+  .RowWrapperEdit {
+    text-align: left;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.563rem;
+    font-family: $default-font-name;
+    letter-spacing: 0rem;
+    color: $primaryDark;
+    opacity: 1;
+    padding-top: 1.563rem;
+  }
+
+  .TextPinWrapperEdit {
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primaryBlue;
+    
+  }
+
+  .TextPinEdit {
+    font: var(--unnamed-font-style-normal) normal medium 1.25rem/1.5rem
+      var(--unnamed-font-family-urbanist);
+    text-align: left;
+    letter-spacing: 0rem;
+    color: $white;
+    opacity: 1;
+    margin: auto;
+  }
+  .form-field .MuiInputBase-formControl {
+    font-weight: $font-weight-normal !important;
+  }
+  .form-field .MuiInputBase-formControl:before {
+    border-bottom: 0 !important;
+  }
+
+  //========Alert box styling=======
+
+  .spanBox {
+    font-weight: $font-weight-bold;
+    font-size: 2.1875rem;
+    font-family: $default-font-name;
+    text-align: center;
+    overflow-wrap: break-word;
+    line-height: 1;
+  }
+
+  .DialogWrapperAlert {
+    height: 100%;
+    width: 100%;
+
+    .dialogContentAlert {
+      margin-top: 5.75rem;
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+      justify-content: center;
+      overflow-wrap: break-word;
+      font-size: 1.875rem;
+      text-align: center;
+    }
+  }
+
+  .ButtonWrapperAlert {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: 80rem) and (max-width: 93.688rem) {
+      max-width: 34.375rem;
+    }
+
+    @media (min-width: 93.75rem) {
+      max-width: 61.063rem;
+    }
+
+    .dialogActionsAlert {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  .alert-button-effect{
+    border: 1px solid $primaryDark;
+    &:hover {
+      border: 1px solid $primaryBlue;
+      color: $primaryBlue;
+    }
+  }
+
+  .ButtonSizeAlert {
+    width: 12.25rem;
+    margin: 0 10px;
+    margin-bottom: 6.25rem;
+  }
+  .ClientSubTitle {
+    color: $primaryDark;
+    font-weight: bold !important;
+    font-family: $default-font-name;
+    font-size: $font-size-base !important;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+  .search-container {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shadow-black;
+    opacity: 1;
+    margin-top: 1.25rem;
+    padding-top: 1.875rem;
+  }
+  .category-table-container {
+    padding-left: 0.313rem;
+    padding-right: 0.313rem;
+    max-height: 80vh;
+    background-color: $secondaryGrayLight;
+  }
+
+  .category-table-container::-webkit-scrollbar {
+    width: 0.425rem;
+  }
+
+  .category-table-container::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 0.938rem;
+    height: 2.813rem;
+  }
+  .category-table-header {
+    background-color: $secondaryGrayLight;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    }
+  .add-circle-outline-icon-wrapper:hover {
+    color: $primaryBlue;
+  }
+  .add-circle-outline-icon-wrapper {
+    color: $primaryDark;
+    cursor: pointer;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .searh-button{
+    height: 80% !important;
+    width: 90%;
+    background-color: $primaryBlue;
+    :hover{
+      background-color: $black;
+      color: $white,
+    }
+  }
+  .MuiTableRow-root{
+    border-bottom: 0.063rem solid $Gray44;
+  }
+  
+  .chevron-icon-style{
+    font-size: $font-size-base;
+  }
+}

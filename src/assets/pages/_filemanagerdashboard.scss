@@ -1,0 +1,323 @@
+.file-manager-dashboard-container {
+  //========index.tsx of file manager dashboard=========
+
+  .upload-button {
+    background-color: $primaryDark;
+    border: none;
+    color: $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+  }
+
+  .search-button {
+    width: 9.375rem;
+    height: 63% !important;
+
+    &:hover {
+      background-color: $primaryBlue !important;
+    }
+  }
+
+  .search-container {
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shadow-black;
+    opacity: 1;
+    margin-top: 1.25rem;
+    padding-top: 1.875rem;
+  }
+
+  .search-empty-error {
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+
+  .textField-wrapper {
+    width: -webkit-fill-available !important;
+  }
+
+  .loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .files-container {
+    padding-top: 1.625rem;
+
+    .file-actions {
+      margin-top: 3%;
+    }
+  }
+
+  .files-gallery-container-size{
+    height: 60vh;
+    overflow-y: scroll;
+    padding-top: 0.625rem;
+  }
+
+  .files-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4.5fr;
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .action-text-title-wrapper {
+    align-items: flex-end;
+  }
+
+  .action-text-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .Action-Text-wrapper {
+    align-items: flex-end;
+  }
+
+  .Action-Text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: $true-black !important;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryBlue !important;
+    }
+  }
+
+  .file-card-wrraper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.875rem;
+    padding: 0rem;
+  }
+
+  .file-card {
+    padding: 0 0 0.938rem 0;
+    width: 96%;
+    top: 20.375rem;
+    left: 22.938rem;
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 0.625rem $shade-black;
+    border-radius: 0.313rem;
+    opacity: 1;
+    margin-right: 0.875rem;
+    height: 88%;
+  }
+
+  .file-card-header {
+    justify-content: space-between;
+
+    .file-selection {
+      padding-left: 5%;
+      padding-bottom: 0%;
+    }
+  }
+
+  .file-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .file-card-footer {
+    justify-content: flex-start;
+    width: 15rem;
+    &:hover {
+      color: $primaryBlue;
+      cursor: default;
+    }
+  }
+
+  .default-file-icon {
+    font-size: 1.25rem;
+    padding-left: 7%;
+    padding-bottom: 0%;
+  }
+
+  .No-files-text {
+    text-align: center;
+  }
+
+  //=========UploadFiles.tsx file of "File Manager" dashboard==============
+
+  .Drop-Zone {
+    height: 9.375rem;
+    width: 26.563rem;
+    background: $secondaryGrayLight 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0rem 1.25rem $shadow-black;
+    border-radius: 0.313rem;
+    display: flex;
+    align-items: center;
+  }
+
+  //=========UploadStatusSection.tsx file of "File Manager" dashboard==============
+
+  .file-name-icon-wrapper {
+    min-height: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .file-name-wrapper {
+    margin-left: 1.25rem;
+    color: $primaryDark;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    $white-space: nowrap;
+    width: 7rem;
+  }
+
+  .upload-message-wrapper {
+    margin-left: 1.563rem;
+    color: $primaryDark;
+    font-size: 1rem;
+    width: 25ch;
+  }
+  .upload-message-wrapper-blue {
+    margin-left: 1.563rem;
+    color: $primaryBlue;
+    font-size: 1rem;
+    width: 25ch;
+  }
+
+  .status-section-wrapper {
+    margin-top: 1.25rem;
+  }
+
+  //=======IconButtonMenu.tsx page of file manager dashboard=====
+
+  .file-menu-icon {
+    color: $black;
+  }
+
+  //=======dialogConfirmationBox.tsx page of file manager dashboard(in ConfirmDialogBox folder)=====
+  .dialog-top {
+    text-align: center;
+    font-weight: bold !important;
+    font-family: $default-font-name !important;
+    font-size: 2.188rem !important;
+    padding-top: 3.125rem !important;
+    color: $primaryDark !important;
+  }
+
+  .dialog-bottom {
+    justify-content: center !important;
+    padding-bottom: 3.125rem !important;
+  }
+
+  .DialogBtn {
+    width: 12.375rem;
+  }
+
+  //=========UploadFiles.tsx file of "File Manager" dashboard==============
+
+  .dialog-title {
+    text-align: center;
+    font-size: $popup-title-size;
+  }
+
+  .btn-finish {
+    height: 3.125rem;
+    width: 7.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .close-dialog {
+    .close-assign-license {
+      float: right;
+      margin-top: 0.625rem;
+      margin-right: 0.938rem;
+    }
+  }
+
+  .drop-zone-wrapper {
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+  .file-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .import-button {
+    justify-content: end;
+    padding-right: 0.813rem;
+    font-weight: $font-weight-bold;
+    font-family: $default-font-name;
+    font-size: 1rem !important;
+    cursor: pointer;
+  }
+
+  .finishBtn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: -1.25rem;
+  }
+
+  .import-error-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $error-red;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.625rem;
+  }
+
+  .file-list-wrappper {
+    ::-webkit-scrollbar {
+      width: 0.625rem;
+      height: 3.875rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $gray-scroll;
+      border-radius: 0.313rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: $secondaryGrayLight;
+    }
+
+    margin-top: 0.875rem;
+    overflow-y: scroll;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    float: left;
+    height: 10rem;
+    position: relative;
+  }
+
+  .page-title-file-manager {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: $default-font-name;
+    color: $primaryDark;
+  }
+  .page-title-file-manager::after {
+    content: "";
+    display: block;
+    border-bottom: 0.188rem solid $primaryDark;
+    width: 92px;
+    bottom: -9px;
+  }
+
+  //Media query for File manager
+  @import "../mixins-media//mq-filemanager";
+}

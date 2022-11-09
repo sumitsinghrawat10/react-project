@@ -1,0 +1,36 @@
+.MuiButtonBase-root.MuiMenuItem-root.Mui-selected:hover{
+    opacity: 1;
+    background-color: $primaryBlue;
+    color: $white;
+  }
+  .MuiButtonBase-root.MuiMenuItem-root:hover{
+    opacity: 1;
+    background-color: $primaryBlue;
+    color: $white;
+    border-bottom: 2px solid $white;
+  }
+  .MuiButtonBase-root.MuiMenuItem-root.Mui-selected{
+    opacity: 1;
+    background-color: $primaryBlue;
+    color: $white;
+    border-bottom: 2px solid $white;
+    .MuiButtonBase-root.MuiCheckbox-root.Mui-checked{
+      color: $white;
+    }
+}
+.custom-vertical-scroll{
+  &::-webkit-scrollbar {
+    width: $scroll-width;
+    height: $scroll-height;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondaryGray;
+    border-radius: $scroll-thumb-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $white;
+  }
+
+}

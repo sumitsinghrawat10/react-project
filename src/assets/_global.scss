@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Urbanist", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.error {
+  font-size: 14px;
+  color: $secondaryRed;
+  margin-bottom: 10px;
+}
+.container {
+  padding-top: 1rem;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  max-width: 100% !important;
+}
+
+.TitleWrapWithTooltip {
+  width: 43%;
+  word-wrap: break-word;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.TitleWrap {
+  width: 100%;
+  word-wrap: break-word;
+  display: inline-block;
+}
+.hr-line {
+  border: 1px solid $secondaryGray;
+  width: 100%;
+}
+.page-title {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Urbanist", sans-serif;
+  color: $primaryDark;
+}
+.page-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid $primaryDark;
+  width: 92px;
+  bottom: -9px;
+}
+
+.initial-setup-title::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid $primaryBlue;
+  width: 192px;
+  position: relative;
+  bottom: 50px;
+  margin: 0 auto;
+}
+
+.react-datepicker-wrapper {
+  .input-form {
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    font-weight: 600;
+    &:focus {
+      outline: none;
+    }
+    div::before {
+      border-bottom: none !important;
+    }
+  }
+  input::-webkit-input-placeholder {
+    color: $secondaryGray;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.6;
+  }
+}
+.error-text textarea p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 0.8571428571428571rem;
+  line-height: 1.66;
+  text-align: left;
+  margin-top: 0.188rem;
+  margin-bottom: 0;
+}
+.DashboardEmpSwal {
+  z-index: 10000 !important;
+}
+
+.text-field.text-field {
+  background-color: $secondaryGrayLight;
+  font-size: $font-size-base;
+  width: 100%;
+}
+
+.badge-exp-date {
+  margin-left: 5px;
+}
+.vehicle-date {
+  border: none;
+  background-color: $secondaryGrayLight;
+  font-size: 14px;
+  width: 45%;
+}
+.vehicle-date fieldset {
+  border: none !important;
+}
+.upload-image {
+  color: $primaryBlue;
+  font-weight: 600;
+}
+.image-area {
+  padding-left: 1rem;
+  font-size: 16px;
+}
+.image-curosr {
+  cursor: pointer;
+  &:hover {
+    color: $primaryBlue;
+  }
+}
+.submit-wrapper {
+  padding-left: 1px;
+}
+.no-click-backdrop {
+  pointer-events: none;
+}
+.vehicle-picture {
+  padding-left: 1rem;
+}
+.hide-link {
+  display: none;
+}
+.swal2-actions {
+  .swal2-loader {
+    border-color: $primaryBlue transparent $primaryBlue transparent;
+  }
+}
+.swal2-styled.swal2-confirm {
+  background-color: $primaryBlue !important;
+}
+.popup-btn:hover {
+  color: #fff !important;
+}
+.MuiTable-root .TableHeaderWrapper {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $primaryDark; 
+  @media (max-width: $laptop-width) {
+        font-size: 1rem;
+  }
+}
+ 

@@ -1,0 +1,20 @@
+.iconBack-container {
+    padding-bottom: 0.219rem;
+    padding-left: 0.1rem;
+.iconBack {
+    height: 2.188rem;
+    width: 2.5rem;
+    font-size: 1.563rem;
+    margin-right: 0.6rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.1rem;
+    box-shadow: 0rem 0rem 0.5rem #00000033;
+    border-radius: 6.25rem;
+}
+.iconBack:hover {
+    color: $primaryLight;
+    cursor: pointer;
+}
+}
+

@@ -1,0 +1,11 @@
+@import "./breakpoints.scss";
+
+@include media(">phone", "<=desktop") {
+  .detail-page-text {
+    display: none;
+  }
+  .EmployeeDetailWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

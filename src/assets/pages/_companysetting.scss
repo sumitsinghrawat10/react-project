@@ -1,0 +1,327 @@
+.company-setting-dashboard {
+
+    @mixin inputfield($ml:0.625rem, $mr:0.625rem, $width:21.75rem) {
+        margin-left: $ml;
+        margin-right: $mr;
+        width: $width;
+        margin-top: 0.625rem;
+    }
+
+    .BellIcon {
+        text-align: left;
+        font-style: $font-weight-normal;
+        line-height: 1.563rem;
+        font-family: $default-font-name;
+        letter-spacing: 0rem;
+        color: $primaryDark;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .MainContainer {
+        height: 100vh;
+    }
+
+    .EditBackContainer {
+        margin-left: auto;
+    }
+
+    .Title {
+        color: $primaryDark;
+        font-weight: bold !important;
+        font-family: $default-font-name;
+        font-size: 2.188rem !important;
+    }
+
+    .SubTitle {
+        color: $primaryDark;
+        font-weight: bold !important;
+        font-family: $default-font-name;
+        font-size: 1rem !important;
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+
+
+    .TextFieldWrap {
+        margin-left: 0.625rem !important;
+        margin-right: 0.625rem !important;
+        width: 21.75rem !important;
+        margin-top: 0.625rem !important;
+    }
+
+    .ContactTextField {
+        margin-right: 1.25rem !important;
+        margin-left: 0rem !important;
+    }
+
+    .ZipcodeTextField {
+        width: 13.688rem !important;
+    }
+
+    .ButtonCancel {
+        color: $primaryDark;
+        cursor: pointer;
+    }
+
+    .FooterWrapper {
+        position: relative;
+        flex: 1;
+        height: calc(100vh - 79vh);
+    }
+
+    .HrWrapper {
+        width: 100%;
+        position: absolute;
+        bottom: 4.25rem;
+        color: $primaryBlue;
+    }
+
+    .ButtonAddWrapper {
+        position: absolute !important;
+        bottom: 0rem;
+        right: 0rem;
+        margin-bottom: 0.75rem !important;
+        padding: 1.5rem 5.063rem 1.5rem 5.063rem !important;
+
+    }
+
+    .RowWrapperComp {
+        text-align: left;
+        font-style: $font-weight-normal;        
+        font-weight: $font-weight-normal;       
+        font-size: 1rem;
+        line-height: 1.563rem;
+        font-family: $default-font-name;
+        letter-spacing: 0rem;
+        color: $primaryDark;
+        opacity: 1;
+        padding-top: 0.625rem;
+    }
+
+    .TextPinWrapper {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $primaryBlue;
+    }
+
+    .TextPin {
+        font-style: $font-weight-normal;
+        font-weight: 600;
+        font-stretch: $font-weight-normal;
+        font-size: 1rem;
+        line-height: 1.563rem;
+        font-family: $default-font-name;
+        text-align: left;
+        letter-spacing: 0rem;
+        color: $white;
+        opacity: 1;
+        margin: auto;
+    }
+
+    .EditBackWrapper {
+        text-align: left;
+        font-style: $font-weight-normal;
+        font-weight: 600;
+        font-stretch: $font-weight-normal;
+        font-size: 1rem;
+        line-height: 1.563rem;
+        font-family: $default-font-name;
+        letter-spacing: 0rem;
+        color: $primaryDark;
+        opacity: 1;
+        cursor: pointer;
+
+        &:hover {
+            color: $primaryBlue  !important;
+        }
+
+    }
+
+    .LoaderWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+
+    .FieldHeading {
+        color: $primaryDark;
+        font-weight: bold !important;
+        font-family: $default-font-name;
+        font-size: 1rem !important;
+        margin-top: 1.875rem;
+    }
+
+    .NotificationWrapper {
+        margin-left: auto;
+    }
+
+    .HrLine {
+        border: 0.063rem solid $primaryBlue;
+    }
+
+    .ButtonWrappercomp {
+        padding: 1.875rem 0rem 2rem 0rem;
+        margin-left: auto;
+    }
+
+    .ExportButton {
+        width: 198px;
+
+        :hover {
+            background-color: $black !important;
+        }
+    }
+
+
+    .InnerWrap {
+        margin-right: 5.625rem;
+    }
+
+    .CloseDialog {
+        .close-assign-task {
+            float: right;
+            margin-top: 0.625rem;
+            margin-right: 0.938rem;
+        }
+    }
+
+    .DialogTop {
+        text-align: center;
+        font-weight: bold !important;
+        font-family: $default-font-name;
+        font-size: 1.875rem !important;
+        color: $primaryDark  !important;
+    }
+
+    .Error {
+        font-size: 0.875rem;
+        color: $error-text;
+        margin-top: 0.313rem;
+        margin-bottom: 0.313rem;
+    }
+
+    .DivRowWrapper {
+        margin: 0.938rem;
+    }
+
+    .ToolTipDivWrapper {
+        overflow: "hidden";
+        width: "29.688rem";
+    }
+
+    .ButtonSize {
+        width: 9.375rem !important;
+    }
+
+    .RoleMarginTop {
+        margin-left: 0.5rem !important;
+    }
+
+    .cancel-btn {
+        color: $primaryDark;
+        margin: 1.5rem;
+        padding-right: 1rem;
+        cursor: pointer;
+        font-weight: $font-weight-bold;
+    }
+
+    .link-wrapper {
+        font-weight: 600;
+        color: $primaryDark;
+        text-decoration: none;
+        cursor: pointer;
+        pointer-events: all;
+        margin-left: 1.25rem;
+        margin-top: 0.625rem;
+        margin-bottom: 0;
+        &:hover {
+            color: $primaryBlue;
+        }
+    }
+
+    .role-text-align{
+        margin-top: 1.5rem;
+    }
+
+    // CompanyDetailsEdit
+    .details-edit {
+
+        &-fieldname {
+            color: $primaryDark;
+            font-weight: bold !important;
+            font-family: $default-font-name;
+            font-size: 1rem ;
+            margin-top: 0.625rem;
+            margin-bottom: 0.625rem; 
+        }
+
+        &-textfield {
+            @include inputfield;
+        }
+
+        &-zipcode-textfield {
+            @include inputfield($width:13.688rem);
+        }
+
+        &-contact-textfield {
+            @include inputfield($ml:0rem,$mr:1.25rem);
+        }
+
+        &-footer-wrapper{
+            position: relative;
+            flex: 1;
+            height: calc(100vh - 79vh);
+        }
+
+        &-hr-wrapper {
+            width: 100%;
+            position: absolute;
+            bottom: 4.25rem;
+            color: $primaryBlue;
+        }
+
+        &-save-button-wrapper{
+            position: absolute !important;
+            bottom: 0rem;
+            right: 0rem;
+            margin-bottom: 0.75rem !important;
+            padding-top: 1.5rem !important;
+            padding-right: 5.063rem !important;
+            padding-bottom: 1.5rem !important;
+            padding-left: 5.063rem !important;
+        }
+
+        &-row-wrapper {
+            text-align: left;
+            font-family: $default-font-name;
+            font-size: 1rem;
+            line-height: 1.563rem;
+            letter-spacing: 0rem;
+            color: $primaryDark;
+            opacity: 1;
+            padding-top: 0.625rem;
+        }
+
+    }
+    
+    .modal-title {
+        text-align: center;
+        font-weight: bold !important;
+        font-family: $default-font-name;
+        font-size: 1.875rem !important;
+        color: $primaryDark !important;
+    }
+
+    .modal-button-wrapper {
+        justify-content: right !important;
+    }
+
+    @import "../mixins-media/mq-company-settings";
+}
